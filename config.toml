@@ -1,0 +1,58 @@
+baseURL = 'https://recoguides.com/'
+languageCode = 'en-us'
+title = 'RecoGuides - Micro-SaaS Tool Comparison'
+theme = 'hello-friend-ng'
+
+[params]
+  # Theme settings
+  homeSubtitle = "Expert comparisons of the best Micro-SaaS tools for freelancers and teams"
+  dateFormat = "January 2, 2006"
+  
+  # Colors
+  brandColor = "#3f51b5"
+  accentColor = "#2196f3"
+  
+  # Features
+  showReadingTime = true
+  showShareButtons = true
+  showPagination = true
+  
+  # Social
+  email = "contact@recoguides.com"
+  github = "https://github.com/etaio"
+  twitter = "https://twitter.com/recoguides"
+
+[taxonomies]
+  category = "categories"
+  tag = "tags"
+
+[menu]
+  [[menu.main]]
+    identifier = "home"
+    name = "Home"
+    url = "/"
+    weight = 1
+  
+  [[menu.main]]
+    identifier = "project-management"
+    name = "Project Management"
+    url = "/categories/project-management/"
+    weight = 2
+  
+  [[menu.main]]
+    identifier = "time-tracking"
+    name = "Time Tracking"
+    url = "/categories/time-tracking/"
+    weight = 3
+  
+  [[menu.main]]
+    identifier = "invoicing"
+    name = "Invoicing"
+    url = "/categories/invoicing/"
+    weight = 4
+  
+  [[menu.main]]
+    identifier = "about"
+    name = "About"
+    url = "/about/"
+    weight = 5
