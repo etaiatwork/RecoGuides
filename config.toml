@@ -9,7 +9,7 @@ googleAnalytics = 'UA-XXXXXXX-X' # Placeholder - add actual GA ID later
   homeSubtitle = "Expert comparisons of the best Micro-SaaS tools for freelancers and teams"
   dateFormat = "January 2, 2006"
   description = "Independent, data-driven comparisons of Micro-SaaS tools. Find the best ClickUp, Monday.com, FreshBooks, and Asana alternatives."
-  author = "Etai Ocarn"
+  author = ["Etai Ocarn"]
   
   # Colors
   brandColor = "#3f51b5"
