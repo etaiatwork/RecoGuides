@@ -1,8 +1,15 @@
+{{ $product := .Get 0 }}
+{{ $affiliate := false }}
+{{ range site.Data.affiliates.affiliates }}
+ {{ if eq .slug $product }}
+ {{ $affiliate = . }}
+ {{ end }}
+{{ end }}
+{{ if $affiliate }}
 <div class="cta-product">
-    {{ $product := .Get 0 }}
-    {{ $affiliate := site.Data.affiliates[$product] }}
-    <h3>{{ $affiliate.name }}</h3>
-    <p>{{ $affiliate.shortDescription }}</p>
-    <a href="{{ if eq $affiliate.status "active" }}{{ $affiliate.affiliateUrl }}{{ else }}{{ $affiliate.websiteUrl }}{{ end }}" rel="{{ if eq $affiliate.status "active" }}nofollow sponsored{{ else }}nofollow{{ end }}" class="cta-button">Learn More</a>
-    {{ if eq $affiliate.status "active" }}<span class="affiliate-link">Affiliate link</span>{{ end }}
+ <h3>{{ $affiliate.name }}</h3>
+ <p>{{ $affiliate.shortDescription }}</p>
+ <a href="{{ if eq $affiliate.status "active" }}{{ $affiliate.affiliateUrl }}{{ else }}{{ $affiliate.websiteUrl }}{{ end }}" rel="{{ if eq $affiliate.status "active" }}nofollow sponsored{{ else }}nofollow{{ end }}" class="cta-button">Learn More</a>
+ {{ if eq $affiliate.status "active" }}<span class="affiliate-link">Affiliate link</span>{{ end }}
 </div>
+{{ end }}
