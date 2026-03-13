@@ -1,6 +1,1 @@
----
-title: "{{ replace .Name "-" " " | title }}"
-date: {{ .Date }}
-draft: true
----
-
+---\ntitle: "{{ replace .Name "-" " " | title }}"\ndate: {{ .Date }}\ndraft: false\nauthor: "Etai Ocarn"\ndescription: ""\nfeatured_image: ""\ncategories: []\ntags: []\nverticals: []\nproducts: []\naffiliate_disclosure: "This guide contains affiliate links. We earn a commission when you sign up through our links at no extra cost to you."\nseo:\n metaTitle: ""\n metaDescription: ""\n canonicalUrl: ""\n---
