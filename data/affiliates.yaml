@@ -1,0 +1,119 @@
+- slug: clickup
+  name: ClickUp
+  status: pending
+  affiliateUrl: "PENDING_AFFILIATE_URL"
+  websiteUrl: "https://clickup.com"
+  logoPath: "/images/affiliates/clickup-logo.png"
+  shortDescription: "All-in-one project management and productivity platform"
+  commission: "PENDING"
+  categories: [project-management, productivity]
+  verticals: [micro-saas]
+  pros:
+    - Extremely customizable
+    - Generous free plan
+    - Replaces multiple tools
+  cons:
+    - Can feel overwhelming initially
+    - Mobile app lags behind desktop
+
+- slug: asana
+  name: Asana
+  status: pending
+  affiliateUrl: "PENDING_AFFILIATE_URL"
+  websiteUrl: "https://asana.com"
+  logoPath: "/images/affiliates/asana-logo.png"
+  shortDescription: "Popular project management tool for teams"
+  commission: "PENDING"
+  categories: [project-management, productivity]
+  verticals: [micro-saas]
+  pros:
+    - User-friendly interface
+    - Great for collaboration
+    - Task automation features
+  cons:
+    - Limited functionality in free version
+
+- slug: monday
+  name: Monday.com
+  status: pending
+  affiliateUrl: "PENDING_AFFILIATE_URL"
+  websiteUrl: "https://monday.com"
+  logoPath: "/images/affiliates/monday-logo.png"
+  shortDescription: "Visual project management tool for teams"
+  commission: "PENDING"
+  categories: [project-management, productivity]
+  verticals: [micro-saas]
+  pros:
+    - Highly customizable workflows
+    - Visual dashboard
+    - Supports multiple team views
+  cons:
+    - Can be pricey
+
+- slug: freshbooks
+  name: FreshBooks
+  status: pending
+  affiliateUrl: "PENDING_AFFILIATE_URL"
+  websiteUrl: "https://freshbooks.com"
+  logoPath: "/images/affiliates/freshbooks-logo.png"
+  shortDescription: "Invoicing and accounting software for small businesses"
+  commission: "PENDING"
+  categories: [invoicing, finance]
+  verticals: [micro-saas]
+  pros:
+    - Simple to use
+    - Excellent customer service
+    - Time tracking tools
+  cons:
+    - Limited features compared to larger competitors
+
+- slug: toggl
+  name: Toggl
+  status: pending
+  affiliateUrl: "PENDING_AFFILIATE_URL"
+  websiteUrl: "https://toggl.com"
+  logoPath: "/images/affiliates/toggl-logo.png"
+  shortDescription: "Time tracking tool for teams and freelancers"
+  commission: "PENDING"
+  categories: [time-tracking]
+  verticals: [micro-saas]
+  pros:
+    - Easy to use
+    - Mobile app available
+    - Integrates with other apps
+  cons:
+    - Reporting features are basic
+
+- slug: harvest
+  name: Harvest
+  status: pending
+  affiliateUrl: "PENDING_AFFILIATE_URL"
+  websiteUrl: "https://harvestapp.com"
+  logoPath: "/images/affiliates/harvest-logo.png"
+  shortDescription: "Time tracking and invoicing software"
+  commission: "PENDING"
+  categories: [time-tracking, invoicing]
+  verticals: [micro-saas]
+  pros:
+    - Great reporting features
+    - Simple invoicing
+    - Integrates with many project management tools
+  cons:
+    - Limited project management functions
+
+- slug: clockify
+  name: Clockify
+  status: pending
+  affiliateUrl: "PENDING_AFFILIATE_URL"
+  websiteUrl: "https://clockify.me"
+  logoPath: "/images/affiliates/clockify-logo.png"
+  shortDescription: "Free time tracking app"
+  commission: "PENDING"
+  categories: [time-tracking]
+  verticals: [micro-saas]
+  pros:
+    - Unlimited users and tracking
+    - Simple interface
+    - Good reporting capabilities
+  cons:
+    - Some features are limited in the free version
