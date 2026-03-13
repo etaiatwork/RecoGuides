@@ -1,72 +1,8 @@
-baseURL = 'https://recoguides.com/'
-languageCode = 'en-us'
-title = 'RecoGuides - Micro-SaaS Tool Comparison'
-theme = 'hello-friend-ng'
-googleAnalytics = 'UA-XXXXXXX-X' # Placeholder - add actual GA ID later
-[params]
-  # Theme settings
-  homeSubtitle = "Expert comparisons of the best Micro-SaaS tools for freelancers and teams"
-  dateFormat = "January 2, 2006"
-  description = "Independent, data-driven comparisons of Micro-SaaS tools. Find the best ClickUp, Monday.com, FreshBooks, and Asana alternatives."
-  author = ["Etai Ocarn"]
-  
-  # Colors
-  brandColor = "#3f51b5"
-  accentColor = "#2196f3"
-  
-  # Features
-  showReadingTime = true
-  showShareButtons = true
-  showPagination = true
-  showRelatedPosts = true
-  
-  # Social
-  email = "contact@recoguides.com"
-  github = "https://github.com/etaio"
-  twitter = "https://twitter.com/recoguides"
-  linkedin = "https://linkedin.com/company/recoguides"
-  
-  # Affiliate disclosure
-  affiliateDisclosure = "This site contains affiliate links. We earn commissions when you purchase through our links at no extra cost to you."
-  
-  # SEO
-  metaRobots = "index, follow"
-  
-[outputs]
-  home = ["HTML", "RSS", "JSON"]
-[services]
-  [services.googleAnalytics]
-    id = "UA-XXXXXXX-X"
+# config.toml updates
+title = 'RecoGuides - Expert Tool Comparisons for Freelancers & Teams'
+homeSubtitle = 'Honest, data-driven comparisons to help you choose the right tools'
+description = 'RecoGuides delivers independent, research-backed comparisons across tools for freelancers, small businesses, and remote teams.'
 [taxonomies]
-  category = "categories"
-  tag = "tags"
-[menu]
-  [[menu.main]]
-    identifier = "home"
-    name = "Home"
-    url = "/"
-    weight = 1
-  
-  [[menu.main]]
-    identifier = "project-management"
-    name = "Project Management"
-    url = "/categories/project-management/"
-    weight = 2
-  
-  [[menu.main]]
-    identifier = "time-tracking"
-    name = "Time Tracking"
-    url = "/categories/time-tracking/"
-    weight = 3
-  
-  [[menu.main]]
-    identifier = "invoicing"
-    name = "Invoicing"
-    url = "/categories/invoicing/"
-    weight = 4
-  
-  [[menu.main]]
-    identifier = "about"
-    name = "About"
-    url = "/about/"
-    weight = 5
+vertical = 'verticals'
+author = ["Etai Ocarn"]
+menu_order = ["Home", "Project Management", "Time Tracking", "Invoicing", "About"]
