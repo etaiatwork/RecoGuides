@@ -1,0 +1,24 @@
+<table class="affiliate-table">
+    <thead>
+        <tr>
+            <th>Tool</th>
+            <th>Best For</th>
+            <th>Free Plan</th>
+            <th>Starting Price</th>
+            <th>Link</th>
+        </tr>
+    </thead>
+    <tbody>
+        {{ $slugs := .Get 0 | split "," }}
+        {{ range $slug := $slugs }}
+            {{ $affiliate := site.Data.affiliates[$slug] }}
+            <tr>
+                <td>{{ $affiliate.name }}</td>
+                <td>{{ if eq $slug "clickup" }}Project Management{{ else }}Productivity{{ end }}</td>
+                <td>{{ if eq $affiliate.status "active" }}Yes{{ else }}No{{ end }}</td>
+                <td>{{ $affiliate.commission }}</td>
+                <td><a href="{{ if eq $affiliate.status "active" }}{{ $affiliate.affiliateUrl }}{{ else }}{{ $affiliate.websiteUrl }}{{ end }}" rel="nofollow">Link</a></td>
+            </tr>
+        {{ end }}
+    </tbody>
+</table>
