@@ -1,0 +1,18 @@
+{{ define "main" }}
+<div class="home-wrapper">
+ <div class="home-hero">
+ <h1>{{ .Site.Title }}</h1>
+ <p>{{ .Site.Params.homeSubtitle }}</p>
+ </div>
+ <div class="home-posts">
+ <h2>Latest Guides</h2>
+ {{ range first 20 .Site.RegularPages.ByDate.Reverse }}
+ <article class="home-post-item">
+ <h3><a href="{{ .Permalink }}">{{ .Title }}</a></h3>
+ <p class="post-meta">{{ .Date.Format "January 2, 2006" }} ≥ {{ delimit .Params.categories ", " }}</p>
+ <p>{{ .Description }}</p>
+ </article>
+ {{ end }}
+ </div>
+</div>
+{{ end }}
