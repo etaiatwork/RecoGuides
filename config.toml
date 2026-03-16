@@ -13,9 +13,11 @@ googleAnalytics = "G-JVSLQ905JV"
   description = "Honest, data-driven comparisons to help you choose the right tools for your business."
   author = "Etai Ocarn"
   disableThemeToggle = true
+  disableSpecial1stPost = true
   ShowReadingTime = true
+  hideSummary = false
   ShowFullTextinRSS = true
-  ShowShareButtons = true
+  ShowShareButtons = false
   ShowPostNavLinks = true
   ShowBreadCrumbs = true
   ShowCodeCopyButtons = true
@@ -26,10 +28,6 @@ googleAnalytics = "G-JVSLQ905JV"
   comments = false
   hidemeta = false
   showtoc = true
-
-  [params.homeInfoParams]
-    Title = "RecoGuides"
-    Content = "Honest, data-driven comparisons to help freelancers and businesses choose the right tools."
 
   [params.label]
     text = "RecoGuides"
