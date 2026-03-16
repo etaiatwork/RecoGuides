@@ -2,6 +2,8 @@ baseURL = 'https://recoguides.com/'
 languageCode = 'en-us'
 title = 'RecoGuides'
 theme = 'PaperMod'
+googleAnalytics = "G-JVSLQ905JV"
+
 [pagination]
   pagerSize = 10
 
@@ -10,7 +12,9 @@ theme = 'PaperMod'
   title = "RecoGuides"
   description = "Honest, data-driven comparisons to help you choose the right tools for your business."
   author = "Etai Ocarn"
+  disableThemeToggle = true
   ShowReadingTime = true
+  ShowFullTextinRSS = true
   ShowShareButtons = true
   ShowPostNavLinks = true
   ShowBreadCrumbs = true
@@ -32,6 +36,9 @@ theme = 'PaperMod'
 
   [params.profileMode]
     enabled = false
+
+  [params.assets]
+    disableFingerprinting = true
 
 [taxonomies]
   tag = "tags"
