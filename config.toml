@@ -1,62 +1,59 @@
 baseURL = 'https://recoguides.com/'
 languageCode = 'en-us'
-title = 'RecoGuides - Expert Tool Comparisons for Freelancers & Teams'
-theme = 'hello-friend-ng'
-googleAnalytics = 'UA-XXXXXXX-X'
+title = 'RecoGuides'
+theme = 'PaperMod'
+paginate = 10
 
 [params]
- homeSubtitle = "Honest, data-driven comparisons to help you choose the right tools"
- dateFormat = "January 2, 2006"
- description = "RecoGuides delivers independent, research-backed comparisons across tools for freelancers, small businesses, and remote teams."
- author = ["Etai Ocarn"]
- brandColor = "#3f51b5"
- accentColor = "#2196f3"
- showReadingTime = true
- showShareButtons = true
- showPagination = true
- showRelatedPosts = true
- email = "contact@recoguides.com"
- github = "https://github.com/etaio"
- twitter = "https://twitter.com/recoguides"
- linkedin = "https://linkedin.com/company/recoguides"
- affiliateDisclosure = "This site contains affiliate links. We earn commissions when you purchase through our links at no extra cost to you."
- metaRobots = "index, follow"
+  env = "production"
+  title = "RecoGuides"
+  description = "Honest, data-driven comparisons to help you choose the right tools for your business."
+  author = "Etai Ocarn"
+  ShowReadingTime = true
+  ShowShareButtons = true
+  ShowPostNavLinks = true
+  ShowBreadCrumbs = true
+  ShowCodeCopyButtons = true
+  ShowRelatedPosts = true
+  RelatedPostsCount = 3
+  ShowToc = true
+  TocOpen = false
+  comments = false
+  hidemeta = false
+  showtoc = true
 
-[outputs]
- home = ["HTML", "RSS", "JSON"]
+  [params.homeInfoParams]
+    Title = "RecoGuides"
+    Content = "Honest, data-driven comparisons to help freelancers and businesses choose the right tools."
 
-[services]
- [services.googleAnalytics]
- id = "UA-XXXXXXX-X"
+  [params.label]
+    text = "RecoGuides"
+
+  [params.profileMode]
+    enabled = false
 
 [taxonomies]
- category = "categories"
- tag = "tags"
- vertical = "verticals"
+  tag = "tags"
+  vertical = "verticals"
 
 [menu]
- [[menu.main]]
- identifier = "home"
- name = "Home"
- url = "/"
- weight = 1
- [[menu.main]]
- identifier = "project-management"
- name = "Project Management"
- url = "/categories/project-management/"
- weight = 2
- [[menu.main]]
- identifier = "time-tracking"
- name = "Time Tracking"
- url = "/categories/time-tracking/"
- weight = 3
- [[menu.main]]
- identifier = "invoicing"
- name = "Invoicing"
- url = "/categories/invoicing/"
- weight = 4
- [[menu.main]]
- identifier = "about"
- name = "About"
- url = "/about/"
- weight = 5
+  [[menu.main]]
+    identifier = "about"
+    name = "About"
+    url = "/about/"
+    weight = 10
+  [[menu.main]]
+    identifier = "contact"
+    name = "Contact"
+    url = "/contact/"
+    weight = 20
+
+[outputs]
+  home = ["HTML", "RSS", "JSON"]
+
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true
+  [markup.highlight]
+    noClasses = false
