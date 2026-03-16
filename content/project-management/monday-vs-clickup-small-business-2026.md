@@ -4,7 +4,7 @@ date: 2026-03-15T09:00:00Z
 draft: false
 author: "Etai Ocarn"
 description: "Monday.com vs ClickUp compared for small business owners in 2026. Features, pricing, and which one is worth your money."
-categories: [project-management, small-business]
+tags: [project-management, small-business]
 tags: [monday, clickup, comparison, small-business]
 verticals: [micro-saas]
 products: [monday, clickup]

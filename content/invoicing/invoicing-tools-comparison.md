@@ -2,7 +2,9 @@
 title: "Invoicing Tools Comparison: Streamline Your Freelance Payments"
 date: 2026-03-07T14:00:00Z
 draft: true
-categories: ["invoicing"]
+verticals: [productivity-tools]
+tags: ["invoicing"]
+verticals: [productivity-tools]
 tags: ["payments", "accounting", "freelance"]
 author: "Etai Ocarn"
 description: "Compare the best invoicing tools for freelancers to get paid faster and manage client billing efficiently."

@@ -4,7 +4,7 @@ date: 2026-03-15T11:00:00Z
 draft: false
 author: "Etai Ocarn"
 description: "The best time tracking tools for freelancers who bill hourly in 2026. Stop losing money on untracked hours."
-categories: [time-tracking, freelance]
+tags: [time-tracking, freelance]
 tags: [toggl, harvest, clockify, time-tracking, billing, freelance]
 verticals: [micro-saas]
 products: [toggl, harvest, clockify]

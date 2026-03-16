@@ -2,7 +2,9 @@
 title: "Time Tracking Tools Review: Find the Best Fit for Your Workflow"
 date: 2026-03-07T13:57:00Z
 draft: false
-categories: ["time-tracking"]
+verticals: [productivity-tools]
+tags: ["time-tracking"]
+verticals: [productivity-tools]
 tags: ["productivity", "billing", "freelance"]
 author: "Etai Ocarn"
 description: "Comprehensive comparison of time tracking tools for accurate billing, productivity analysis, and project management."

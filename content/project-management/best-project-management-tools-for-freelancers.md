@@ -2,7 +2,9 @@
 title: "Best Project Management Tools for Freelancers in 2026"
 date: 2026-03-07T13:55:00Z
 draft: false
-categories: ["project-management"]
+verticals: [productivity-tools]
+tags: ["project-management"]
+verticals: [productivity-tools]
 tags: ["freelance", "productivity", "software"]
 author: "Etai Ocarn"
 description: "Compare the top project management tools for freelancers managing multiple clients and projects effectively."

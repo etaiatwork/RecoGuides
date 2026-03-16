@@ -4,7 +4,7 @@ date: 2026-03-15T12:00:00Z
 draft: false
 author: "Etai Ocarn"
 description: "FreshBooks vs Wave compared for freelancers in 2026. Which invoicing tool gives you the best value?"
-categories: [invoicing, freelance]
+tags: [invoicing, freelance]
 tags: [freshbooks, wave, invoicing, freelance, comparison]
 verticals: [micro-saas]
 products: [freshbooks]
