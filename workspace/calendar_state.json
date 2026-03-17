@@ -1,6 +1,6 @@
 {
-  "pending": true,
-  "approvalStatus": "awaiting",
+  "pending": false,
+  "approvalStatus": "approved",
   "slots": [
     {
       "slot": 1,
@@ -44,5 +44,6 @@
   ],
   "weekOf": "March 18, 2026",
   "generatedAt": "2026-03-17T23:02:46.277241+00:00",
-  "lastUpdateId": 0
+  "lastUpdateId": 0,
+  "approvedAt": "2026-03-17T23:02:46.277241+00:00"
 }
