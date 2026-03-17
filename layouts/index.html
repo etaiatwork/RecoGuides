@@ -1,12 +1,9 @@
 {{- define "main" }}
 <div class="posts">
   {{- range sort .Site.RegularPages "Date" "desc" }}
-  {{- if and (ne .Kind "home") (ne .Section "") }}
-  {{- $section := .Section }}
-  {{- $label := $section }}
-  {{- if eq $section "project-management" }}{{- $label = "Project Management" }}{{- end }}
-  {{- if eq $section "time-tracking" }}{{- $label = "Time Tracking" }}{{- end }}
-  {{- if eq $section "invoicing" }}{{- $label = "Invoicing" }}{{- end }}
+  {{- if and (ne .Kind "home") (ne .Section "") (ne .Type "categories") }}
+  {{- $label := .CurrentSection.Title }}
+  {{- if eq $label "" }}{{- $label = .Section | title }}{{- end }}
   <article class="post-entry">
     <header class="entry-header">
       <h2 class="entry-hint-parent">{{- .Title }}</h2>
@@ -19,7 +16,7 @@
     <footer class="entry-footer">
       <div class="entry-footer-row">
         <span>{{- partial "post_meta.html" . -}}</span>
-        <a href="{{ .Parent.RelPermalink }}" class="category-tag">{{ $label }}</a>
+        <a href="{{ .CurrentSection.RelPermalink }}" class="category-tag">{{ $label }}</a>
       </div>
     </footer>
     <a class="entry-link" aria-label="post link to {{ .Title | plainify }}" href="{{ .Permalink }}"></a>

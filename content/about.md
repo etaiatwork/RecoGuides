@@ -38,7 +38,6 @@ In fact, we often recommend free alternatives when they're genuinely better opti
 Have questions about our reviews? Want to suggest a tool we should compare? 
 
 - Email: contact@recoguides.com
-- GitHub: [etaiatwork](https://github.com/etaio)
 
 ### Join Our Community
 

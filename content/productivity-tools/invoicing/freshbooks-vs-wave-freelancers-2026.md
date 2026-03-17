@@ -39,6 +39,8 @@ Wave is a completely free accounting and invoicing platform. It earns revenue th
 
 **Cons:** Limited customer support, fewer integrations than FreshBooks, payment processing fees add up on large invoices.
 
+{{< affiliate-cta "wave" >}}
+
 ## Head-to-Head Comparison
 
 | Feature | FreshBooks | Wave |
