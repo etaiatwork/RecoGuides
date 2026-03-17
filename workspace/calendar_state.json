@@ -1,0 +1,48 @@
+{
+  "pending": true,
+  "approvalStatus": "awaiting",
+  "slots": [
+    {
+      "slot": 1,
+      "day": "Tuesday",
+      "date": "Mar 18",
+      "type": "BREAKING",
+      "product": "ClickUp",
+      "title": "ClickUp Just Updated Its AI Features: What Freelancers Need to Know",
+      "score": 8,
+      "url": "https://clickup.com/changelog",
+      "reason": "Recent AI feature release with high affiliate potential",
+      "status": "pending",
+      "replaced": false
+    },
+    {
+      "slot": 2,
+      "day": "Wednesday",
+      "date": "Mar 19",
+      "type": "EVERGREEN",
+      "product": "clickup",
+      "title": "ClickUp Review 2026: Is It Worth It?",
+      "score": 7,
+      "category": "project-management",
+      "reason": "High-intent review keyword",
+      "status": "pending",
+      "replaced": false
+    },
+    {
+      "slot": 3,
+      "day": "Thursday",
+      "date": "Mar 20",
+      "type": "EVERGREEN",
+      "product": "clickup, asana, monday",
+      "title": "Best PM Tools for Freelancers 2026",
+      "score": 8,
+      "category": "project-management",
+      "reason": "Broad evergreen comparison keyword",
+      "status": "pending",
+      "replaced": false
+    }
+  ],
+  "weekOf": "March 18, 2026",
+  "generatedAt": "2026-03-17T22:28:04.938662+00:00",
+  "lastUpdateId": 0
+}
