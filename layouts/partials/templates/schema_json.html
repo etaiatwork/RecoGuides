@@ -1,3 +1,4 @@
+<script type="application/ld+json">
 {{- $scratch := newScratch -}}
 {{- $scratch.Set "title" .Title -}}
 {{- with .Description }}{{- $scratch.Set "description" . -}}{{- end -}}
@@ -21,3 +22,4 @@
   "dateModified": {{ .Lastmod.Format "2006-01-02" | jsonify }},
   "inLanguage": {{ .Language.Lang | default "en-us" | jsonify }}
 }
+</script>
