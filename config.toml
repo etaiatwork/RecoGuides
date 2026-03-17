@@ -5,7 +5,7 @@ theme = 'PaperMod'
 googleAnalytics = "G-JVSLQ905JV"
 
 [pagination]
-  pagerSize = 10
+  pagerSize = 20
 
 [params]
   env = "production"
@@ -23,7 +23,7 @@ googleAnalytics = "G-JVSLQ905JV"
   ShowCodeCopyButtons = true
   ShowRelatedPosts = true
   RelatedPostsCount = 3
-  ShowToc = true
+  ShowToc = false
   TocOpen = false
   comments = false
   hidemeta = false
@@ -44,15 +44,20 @@ googleAnalytics = "G-JVSLQ905JV"
 
 [menu]
   [[menu.main]]
+    identifier = "categories"
+    name = "Categories"
+    url = "/categories/"
+    weight = 10
+  [[menu.main]]
     identifier = "about"
     name = "About"
     url = "/about/"
-    weight = 10
+    weight = 20
   [[menu.main]]
     identifier = "contact"
     name = "Contact"
     url = "/contact/"
-    weight = 20
+    weight = 30
 
 [outputs]
   home = ["HTML", "RSS", "JSON"]
