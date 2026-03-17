@@ -1,6 +1,6 @@
 {
-  "pending": false,
-  "approvalStatus": "approved",
+  "pending": true,
+  "approvalStatus": "awaiting",
   "slots": [
     {
       "slot": 1,
@@ -21,12 +21,12 @@
       "date": "Mar 19",
       "type": "EVERGREEN",
       "product": "clickup",
-      "title": "Monday.com vs ClickUp: Best for Remote Teams 2026",
+      "title": "ClickUp Review 2026: Is It Worth It?",
       "score": 7,
       "category": "project-management",
       "reason": "High-intent review keyword",
       "status": "pending",
-      "replaced": true
+      "replaced": false
     },
     {
       "slot": 3,
@@ -43,7 +43,6 @@
     }
   ],
   "weekOf": "March 18, 2026",
-  "generatedAt": "2026-03-17T23:02:46.277241+00:00",
-  "lastUpdateId": 0,
-  "approvedAt": "2026-03-17T23:02:46.277241+00:00"
+  "generatedAt": "2026-03-17T23:24:01.934007+00:00",
+  "lastUpdateId": 0
 }
