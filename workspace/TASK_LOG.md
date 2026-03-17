@@ -4,11 +4,11 @@
 ---
 
 ## Current State
-**Last updated**: 2026-03-13
-**Site status**: ✅ Live at recoguides.com
+**Last updated**: 2026-03-17
+**Site status**: ✅ Live at recoguides.com — PaperMod theme, full structure complete
 **Build status**: ✅ Hugo building cleanly on Netlify
 **Active verticals**: 1 (Micro-SaaS Tools)
-**Articles published**: 0 (setup complete, content phase beginning)
+**Articles published**: 6 (3 project management, 2 time tracking, 1 invoicing)
 **Affiliate status**: All PENDING — awaiting approval
 
 ---
@@ -31,15 +31,15 @@
 ### Phase 2: Content — Micro-SaaS Vertical
 
 #### Project Management Sub-vertical
-- [ ] **2A** — Write: "ClickUp vs Asana: Which Project Management Tool Is Right for You in 2026?"
+- ✅ **2A** — Write: "ClickUp vs Asana: Which Project Management Tool Is Right for You in 2026?"
   - Path: content/project-management/clickup-vs-asana-2026.md
   - Categories: [project-management], Tags: [clickup, asana, comparison, freelance, teams]
 
-- [ ] **2B** — Write: "Best Project Management Tools for Freelancers in 2026"
+- ✅ **2B** — Write: "Best Project Management Tools for Freelancers in 2026"
   - Path: content/project-management/best-project-management-tools-freelancers-2026.md
   - Categories: [project-management, freelance]
 
-- [ ] **2C** — Write: "Monday.com vs ClickUp: A Deep Dive for Small Business Owners"
+- ✅ **2C** — Write: "Monday.com vs ClickUp: A Deep Dive for Small Business Owners"
   - Path: content/project-management/monday-vs-clickup-small-business-2026.md
   - Categories: [project-management, small-business]
 
@@ -64,23 +64,23 @@
   - Categories: [project-management, freelance]
 
 #### Time Tracking Sub-vertical
-- [ ] **3A** — Write: "Toggl vs Harvest vs Clockify: Best Time Tracking Tool in 2026"
-- [ ] **3B** — Write: "Best Time Tracking Tools for Freelancers Who Bill Hourly"
+- ✅ **3A** — Write: "Toggl vs Harvest vs Clockify: Best Time Tracking Tool in 2026"
+- ✅ **3B** — Write: "Best Time Tracking Tools for Freelancers Who Bill Hourly"
 - [ ] **3C** — Write: "Toggl Review 2026: Still the Best?"
 - [ ] **3D** — Write: "Harvest Review 2026: Time Tracking + Invoicing in One"
 - [ ] **3E** — Write: "Clockify Review 2026: Is the Free Plan Enough?"
 - [ ] **3F** — Write: "How to Choose a Time Tracking Tool: The Complete 2026 Guide"
 
 #### Invoicing Sub-vertical
-- [ ] **4A** — Write: "FreshBooks vs Wave: Best Free Invoicing Tool for Freelancers"
+- ✅ **4A** — Write: "FreshBooks vs Wave: Best Free Invoicing Tool for Freelancers"
 - [ ] **4B** — Write: "Best Invoicing Software for Freelancers in 2026"
 - [ ] **4C** — Write: "FreshBooks Review 2026: Worth the Price?"
 
 ---
 
 ### Phase 3: Site Improvements
-- [ ] **5A** — Fix homepage to display article listings instead of blank page
-- [ ] **5B** — Fix logo/site name in top left to display "RecoGuides" correctly
+- ✅ **5A** — Fix homepage to display article listings instead of blank page
+- ✅ **5B** — Fix logo/site name in top left to display "RecoGuides" correctly
 - [ ] **5C** — Apply for affiliate accounts on Impact.com, ShareASale, CJ Affiliate, Rakuten
 
 ---
