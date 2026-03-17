@@ -221,3 +221,34 @@ Search queries to run:
 
 If significant news found: write timely article first before evergreen content.
 Format: "[Product] Just Released [Feature]: Here's What It Means for Freelancers"
+---
+
+## Pre-Publish Checklist (Run Before Every Article Push)
+
+Before pushing any article to GitHub, Etai must:
+
+1. **Scan article for vendor/product mentions** — identify every software product, tool, or service mentioned by name
+2. **Check data/affiliates.yaml** — for each vendor found, check if a slug entry exists
+3. **Add missing vendors** — for any vendor NOT in affiliates.yaml, add a pending entry:
+```yaml
+- slug: vendor-name
+  name: Vendor Name
+  status: pending
+  affiliateUrl: "PENDING_AFFILIATE_URL"
+  websiteUrl: "https://vendor-website.com"
+  logoPath: "/images/affiliates/vendor-name-logo.png"
+  shortDescription: "One line description of what the product does"
+  commission: "PENDING"
+  categories: [relevant-category]
+  verticals: [relevant-vertical]
+  pros:
+    - Key strength 1
+    - Key strength 2
+  cons:
+    - Key weakness 1
+```
+
+4. **Push affiliates.yaml update first**, then push the article
+5. **Never hardcode vendor URLs** in article body — always use shortcodes
+
+This ensures every vendor mentioned on the site is tracked centrally and ready for affiliate integration when approval arrives.

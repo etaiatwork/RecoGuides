@@ -117,3 +117,21 @@
     - Good reporting capabilities
   cons:
     - Some features are limited in the free version
+
+- slug: wave
+  name: Wave
+  status: pending
+  affiliateUrl: "PENDING_AFFILIATE_URL"
+  websiteUrl: "https://waveapps.com"
+  logoPath: "/images/affiliates/wave-logo.png"
+  shortDescription: "Free invoicing and accounting software for small businesses"
+  commission: "PENDING"
+  categories: [invoicing, finance]
+  verticals: [productivity-tools]
+  pros:
+    - Completely free for invoicing and accounting
+    - Unlimited invoices and clients
+    - Professional templates
+  cons:
+    - Limited customer support
+    - Payment processing fees apply
