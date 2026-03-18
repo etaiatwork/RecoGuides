@@ -1,0 +1,14 @@
+{{ $slug := .Get 0 }}
+{{ $vendor := false }}
+{{ range site.Data.affiliates }}
+  {{ if eq .slug $slug }}
+    {{ $vendor = . }}
+  {{ end }}
+{{ end }}
+{{ if $vendor }}
+  {{ if eq $vendor.status "active" }}
+    <a href="{{ $vendor.affiliateUrl }}" rel="nofollow sponsored">{{ $vendor.name }}</a>
+  {{ else }}
+    <a href="{{ $vendor.websiteUrl }}" rel="nofollow">{{ $vendor.name }}</a>
+  {{ end }}
+{{ else }}{{ $slug }}{{ end }}
