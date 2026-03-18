@@ -19,21 +19,21 @@ Before choosing, consider these key factors. Ease of use matters because a tool 
 
 ## Top Picks for Hourly Billing
 
-### {{</* vendor-link "toggl" */>}}
+### {{< vendor-link "toggl" >}}
 
 Toggl is purpose-built for freelancers who bill by the hour. The one-click timer works across desktop, mobile, and browser. Reports are formatted cleanly enough to share directly with clients as proof of work. The free plan covers everything most solo freelancers need.
 
 {{< affiliate-cta "toggl" >}}
 
-### {{</* vendor-link "harvest" */>}}
+### {{< vendor-link "harvest" >}}
 
-{{</* vendor-link "harvest" */>}} goes one step further by connecting time tracking directly to invoicing. When a project is complete, you can generate and send an invoice from your tracked time in under a minute. For freelancers who hate the billing process, this integration is a game changer.
+{{< vendor-link "harvest" >}} goes one step further by connecting time tracking directly to invoicing. When a project is complete, you can generate and send an invoice from your tracked time in under a minute. For freelancers who hate the billing process, this integration is a game changer.
 
 {{< affiliate-cta "harvest" >}}
 
-### {{</* vendor-link "clockify" */>}}
+### {{< vendor-link "clockify" >}}
 
-If budget is a concern, {{</* vendor-link "clockify" */>}} delivers professional time tracking at zero cost. The free plan includes unlimited projects, unlimited users, and solid reporting. It lacks some polish compared to {{</* vendor-link "toggl" */>}} but covers all the essentials.
+If budget is a concern, {{< vendor-link "clockify" >}} delivers professional time tracking at zero cost. The free plan includes unlimited projects, unlimited users, and solid reporting. It lacks some polish compared to {{< vendor-link "toggl" >}} but covers all the essentials.
 
 {{< affiliate-cta "clockify" >}}
 
