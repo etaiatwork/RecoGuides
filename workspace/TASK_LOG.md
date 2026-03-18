@@ -85,9 +85,14 @@
 
 ---
 
+### Phase N: n8n Automation
+- ✅ **N1** — Install n8n in Docker at ~/n8n-docker/, port 5678, America/New_York, auto-restart, credentials from CREDENTIALS.local (2026-03-17)
+- ✅ **N2** — Build Monday Content Research workflow: Tavily search (21 queries × 7 products) → Gemini scoring/ranking → CONTENT_CALENDAR.md → GitHub push → Telegram delivery with dated slots; Telegram Reply Handler polls every 2 min for OK/REPLACE (2026-03-17)
+- ✅ **N3** — Add duplicate detection (Jaccard similarity + slug match against existing articles), fix 3-slot Sunday/Wednesday/Friday schedule with locked category mapping (PM/TT/Invoicing), fix dynamic publish dates in Telegram message (2026-03-17)
+
 ### Phase 4: Weekly Recurring Tasks
 *(Begin after first 5 articles are published)*
-- [ ] Set up Monday news search routine across all tracked products
+- ✅ Set up Monday news search routine across all tracked products (completed via N1–N3 above)
 - [ ] Research and pitch 1-2 new verticals to operator
 - [ ] Maintain 2 evergreen articles per active vertical per week
 
