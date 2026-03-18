@@ -11,7 +11,7 @@ products: [freshbooks, wave]
 affiliate_disclosure: "This guide contains affiliate links. We earn a commission when you sign up through our links at no extra cost to you."
 ---
 
-Getting paid quickly is one of the most important parts of running a freelance business. The right invoicing tool makes the process fast, professional, and painless. {{</* vendor-link "freshbooks" */>}} and {{</* vendor-link "wave" */>}} are two of the most popular options for freelancers in 2026, but they serve different needs.
+Getting paid quickly is one of the most important parts of running a freelance business. The right invoicing tool makes the process fast, professional, and painless. {{< vendor-link "freshbooks" >}} and {{< vendor-link "wave" >}} are two of the most popular options for freelancers in 2026, but they serve different needs.
 
 ## FreshBooks: Best for Growing Freelancers
 
@@ -54,4 +54,4 @@ Wave is a completely free accounting and invoicing platform. It earns revenue th
 
 ## Final Verdict
 
-If you are just starting out or sending fewer than 20 invoices per month, Wave gives you everything you need at no cost. If you are growing and want better support, time tracking, and a more polished experience, FreshBooks is worth the investment. Start with {{</* vendor-link "wave" */>}} and upgrade to {{</* vendor-link "freshbooks" */>}} when your business outgrows it.
+If you are just starting out or sending fewer than 20 invoices per month, Wave gives you everything you need at no cost. If you are growing and want better support, time tracking, and a more polished experience, FreshBooks is worth the investment. Start with {{< vendor-link "wave" >}} and upgrade to {{< vendor-link "freshbooks" >}} when your business outgrows it.
