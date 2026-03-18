@@ -2,7 +2,7 @@
 title: "ClickUp vs Asana: Which Project Management Tool Is Right for You in 2026?"
 date: 2026-03-13T17:00:00Z
 draft: false
-author: "Etai Ocarn"
+author: "RecoGuides Team"
 description: "A detailed comparison of ClickUp and Asana to help freelancers and teams choose the right project management tool in 2026."
 summary: "A detailed comparison of ClickUp and Asana to help freelancers and teams choose the right project management tool in 2026."
 tags: [clickup, asana, comparison, freelance, teams]
@@ -11,7 +11,7 @@ products: [clickup, asana]
 affiliate_disclosure: "This guide contains affiliate links."
 ---
 
-Project management tools are the backbone of productive teams. ClickUp and Asana remain two of the top contenders in 2026, but they cater to different audiences.
+Project management tools are the backbone of productive teams. {{</* vendor-link "clickup" */>}} and {{</* vendor-link "asana" */>}} remain two of the top contenders in 2026, but they cater to different audiences.
 
 ## ClickUp: The Feature Juggernaut
 
@@ -39,4 +39,4 @@ Asana delivers a clean interface that gets teams onboarded fast. Portfolio views
 
 ## Final Verdict
 
-Pick ClickUp for deep customization. Pick Asana for simplicity and client-facing work. Both offer free plans worth testing before committing.
+Pick {{</* vendor-link "clickup" */>}} for deep customization. Pick {{</* vendor-link "asana" */>}} for simplicity and client-facing work. Both offer free plans worth testing before committing.
