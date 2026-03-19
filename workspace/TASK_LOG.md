@@ -1,109 +1,125 @@
 # TASK_LOG.md — RecoGuides Running Task Log
-*Etai updates this after every task. This is the source of truth for current state.*
+*Updated after every task. Source of truth for current state.*
 
 ---
 
 ## Current State
-**Last updated**: 2026-03-18
+**Last updated**: 2026-03-19
 **Site status**: ✅ Live at recoguides.com — PaperMod theme, full structure complete
-**Build status**: ✅ Hugo building cleanly on Netlify
-**Active verticals**: 1 (Micro-SaaS Tools)
-**Articles published**: 6 (3 project management, 2 time tracking, 1 invoicing)
+**Build status**: ✅ Hugo 0.146.0 building cleanly on Netlify
+**Active verticals**: 1 (Productivity Tools)
+**Articles published**: 6
 **Affiliate status**: All PENDING — awaiting approval
-**Author byline**: Changed to "RecoGuides Team" across all 6 articles (2026-03-18)
+**n8n**: ✅ Running at localhost:5678 — v2 workflow suite active
+**AdSense**: ✅ Script in layouts/partials/extend_head.html (ca-pub-5124318262377242)
+**Daily briefing**: ✅ N9 live — 7am ET every day
+**Article writing**: ✅ N8 unified writer live — all content types
+**Marketing**: ✅ N10 live — polls Netlify, queues Buffer posts
+**Content calendar**: ✅ WF1 active (Monday 7am ET)
 
 ---
 
 ## Completed Tasks
 
 ### Phase 1: Architecture ✅
-- ✅ 1A — config.toml updated with new title, description, verticals taxonomy (2026-03-13)
-- ✅ 1B — data/affiliates.yaml created with 7 placeholder products (2026-03-13)
-- ✅ 1C — layouts/shortcodes/affiliate-cta.html created and fixed (2026-03-13)
-- ✅ 1D — layouts/shortcodes/affiliate-table.html created and fixed (2026-03-13)
-- ✅ 1E — archetypes/default.md updated with standard frontmatter (2026-03-13)
-- ✅ 1F — workspace files (MISSION, OPERATIONS, TASK_LOG) pushed to GitHub (2026-03-13)
-- ✅ 1G — Netlify build fixed (submodule init + shortcode syntax) and confirmed live (2026-03-13)
+- ✅ 1A — config.toml updated (2026-03-13)
+- ✅ 1B — data/affiliates.yaml created with 8 products including Wave (2026-03-13)
+- ✅ 1C — affiliate-cta.html shortcode created and fixed (2026-03-13)
+- ✅ 1D — affiliate-table.html shortcode created (2026-03-13)
+- ✅ 1E — archetypes/default.md updated (2026-03-13)
+- ✅ 1F — workspace files pushed to GitHub (2026-03-13)
+- ✅ 1G — Netlify build fixed and confirmed live (2026-03-13)
+
+### Phase 2: Site Redesign ✅
+- ✅ Switched theme from hello-friend-ng to PaperMod (2026-03-16)
+- ✅ Restructured content into /productivity-tools/ vertical hierarchy (2026-03-17)
+- ✅ Created categories landing page at /categories/ (2026-03-16)
+- ✅ Fixed homepage to show article feed with subcategory tags (2026-03-17)
+- ✅ Fixed schema_json.html to prevent Hugo minifier errors (2026-03-17)
+- ✅ Added Google Analytics G-JVSLQ905JV (2026-03-17)
+- ✅ Removed dark mode toggle (2026-03-16)
+- ✅ Added Contact page (2026-03-16)
+- ✅ Fixed affiliate shortcode syntax across all articles (2026-03-16)
+
+### Phase 3: Content — 6 Articles Live ✅
+- ✅ 2A — ClickUp vs Asana 2026 (2026-03-13) — /productivity-tools/project-management/
+- ✅ 2B — Best PM Tools for Freelancers 2026 (2026-03-14)
+- ✅ 2C — Monday vs ClickUp Small Business 2026 (2026-03-15)
+- ✅ 3A — Toggl vs Harvest vs Clockify 2026 (2026-03-15) — /productivity-tools/time-tracking/
+- ✅ 3B — Best Time Tracking Tools for Freelancers 2026 (2026-03-15)
+- ✅ 4A — FreshBooks vs Wave 2026 (2026-03-15) — /productivity-tools/invoicing/
+
+### Infrastructure ✅
+- ✅ n8n installed in Docker at ~/n8n-docker/ (2026-03-17)
+- ✅ n8n accessible at localhost:5678 (2026-03-17)
+- ✅ n8n API key stored in ~/n8n-docker/.env (2026-03-17)
+- ✅ Claude Code installed at /home/elyrosenstock/.npm-global/bin/claude (2026-03-17)
+- ✅ RecoGuides repo cloned permanently to ~/RecoGuides/ (2026-03-17)
+
+### Phase N: n8n Workflow Suite ✅
+- ✅ WF1 — Monday Content Research (2026-03-17): Tavily × 7 products, Gemini scoring, calendar push, Telegram delivery
+- ✅ WF2 — Telegram Reply Handler (2026-03-17, updated 2026-03-19): handles OK, REPLACE, WRITE, SKIP, number selections
+- ✅ N2/N3 — Duplicate detection, 3-slot calendar, dynamic publish dates (2026-03-17)
+- ✅ N5/N6/N7 deleted — replaced by unified N8 Article Writer (2026-03-19)
+- ✅ N8 — Unified Article Writer (2026-03-19): webhook trigger, all content types, correct paths/author/frontmatter
+- ✅ N9 — Daily Morning Briefing (2026-03-19): 7am ET, Tavily AI/SMB search, Gemini headlines, Telegram numbered list
+- ✅ N10 — Marketing Agent (2026-03-19): polls Netlify deploys, Gemini social posts, Buffer queue staggered
+
+### Session 3: Strategy Update ✅
+- ✅ MISSION.md updated — new strategy: AdSense primary, RecoGuides Team byline, SMB/AI focus, daily briefing flow (2026-03-19)
+- ✅ OPERATIONS.md updated — new frontmatter schema (summary field, no categories), vendor-link shortcode, PaperMod rules (2026-03-19)
+- ✅ workspace files synced: openclaw-docker/workspace → RecoGuides/workspace → GitHub (2026-03-19)
+- ✅ Google AdSense added to layouts/partials/extend_head.html (ca-pub-5124318262377242) (2026-03-19)
 
 ---
 
 ## Active Tasks
 
-### Phase 2: Content — Micro-SaaS Vertical
+### Session 4: QC Workflow
+*(Next priority)*
 
-#### Project Management Sub-vertical
-- ✅ **2A** — Write: "ClickUp vs Asana: Which Project Management Tool Is Right for You in 2026?"
-  - Path: content/productivity-tools/project-management/clickup-vs-asana-2026.md
+- [ ] **QC1** — Build post-publish QC checker workflow:
+  - Verify article URL accessible (HTTP 200)
+  - Check shortcodes rendered (no raw `{{<` text visible)
+  - Verify AdSense script present in page source
+  - Check word count reasonable (800+ words)
+  - Send Telegram alert if any check fails / confirmation if all pass
+  - Triggers after each Netlify deploy (coordinate with N10 Marketing Agent)
 
-- ✅ **2B** — Write: "Best Project Management Tools for Freelancers in 2026"
-  - Path: content/productivity-tools/project-management/best-project-management-tools-freelancers-2026.md
+### Content Queue
+*(Ongoing — written via N8 Article Writer based on daily briefing + calendar)*
 
-- ✅ **2C** — Write: "Monday.com vs ClickUp: A Deep Dive for Small Business Owners"
-  - Path: content/productivity-tools/project-management/monday-vs-clickup-small-business-2026.md
+#### Project Management
+- [ ] **2D** — ClickUp Review 2026: Is It Worth It?
+- [ ] **2E** — Asana Review 2026: Honest Pros and Cons
+- [ ] **2F** — Best Project Management Tools for Solo Freelancers
+- [ ] **2G** — Monday.com vs Asana: Which Wins for Small Teams?
+- [ ] **2H** — Best Project Management Tools for Creative Agencies
 
-- [ ] **2D** — Write: "ClickUp Review 2026: Is It Worth It?"
-- [ ] **2E** — Write: "Asana Review 2026: Honest Pros and Cons"
-- [ ] **2F** — Write: "Best Project Management Tools for Solo Freelancers"
-- [ ] **2G** — Write: "Monday.com vs Asana: Which Wins for Small Teams?"
-- [ ] **2H** — Write: "Best Project Management Tools for Creative Agencies"
+#### Time Tracking
+- [ ] **3C** — Toggl Review 2026: Still the Best?
+- [ ] **3D** — Harvest Review 2026: Time Tracking + Invoicing in One
+- [ ] **3E** — Clockify Review 2026: Is the Free Plan Enough?
+- [ ] **3F** — How to Choose a Time Tracking Tool: Complete 2026 Guide
 
-#### Time Tracking Sub-vertical
-- ✅ **3A** — Write: "Toggl vs Harvest vs Clockify: Best Time Tracking Tool in 2026"
-- ✅ **3B** — Write: "Best Time Tracking Tools for Freelancers Who Bill Hourly"
-- [ ] **3C** — Write: "Toggl Review 2026: Still the Best?"
-- [ ] **3D** — Write: "Harvest Review 2026: Time Tracking + Invoicing in One"
-- [ ] **3E** — Write: "Clockify Review 2026: Is the Free Plan Enough?"
-- [ ] **3F** — Write: "How to Choose a Time Tracking Tool: The Complete 2026 Guide"
-
-#### Invoicing Sub-vertical
-- ✅ **4A** — Write: "FreshBooks vs Wave: Best Free Invoicing Tool for Freelancers"
-- [ ] **4B** — Write: "Best Invoicing Software for Freelancers in 2026"
-- [ ] **4C** — Write: "FreshBooks Review 2026: Worth the Price?"
-
----
-
-### Phase 3: Site Improvements
-- ✅ **5A** — Fix homepage to display article listings instead of blank page
-- ✅ **5B** — Fix logo/site name in top left to display "RecoGuides" correctly
-- [ ] **5C** — Apply for affiliate accounts on Impact.com, ShareASale, CJ Affiliate, Rakuten
+#### Invoicing
+- [ ] **4B** — Best Invoicing Software for Freelancers in 2026
+- [ ] **4C** — FreshBooks Review 2026: Worth the Price?
+- [ ] **4D** — Wave Review 2026: Is Free Good Enough?
 
 ---
 
-### Phase N: n8n Automation
-- ✅ **N1** — Install n8n in Docker at ~/n8n-docker/, port 5678, America/New_York, auto-restart (2026-03-17)
-- ✅ **N2** — Build Monday Content Research workflow: Tavily → Gemini → CONTENT_CALENDAR.md → GitHub → Telegram (2026-03-17)
-- ✅ **N3** — Add duplicate detection, fix 3-slot schedule, fix dynamic publish dates (2026-03-17)
-- ✅ **N4** — Breaking news writer: integrated into WF2 OK handler — when calendar is approved and a BREAKING slot exists, immediately writes article via Gemini, pushes to GitHub, triggers Netlify, sends Telegram confirmation (2026-03-18)
-- ✅ **N5** — Sunday 8am ET: Project Management article writer — reads approved calendar, writes via Gemini, pushes to GitHub, deploys to Netlify, sends Telegram confirmation (2026-03-18) | WF ID: nGDPGYr3phHsEnkB
-- ✅ **N6** — Wednesday 8am ET: Time Tracking article writer — same pipeline as N5 (2026-03-18) | WF ID: oJj2xfABVYz6LaJG
-- ✅ **N7** — Friday 8am ET: Invoicing article writer — same pipeline as N5 (2026-03-18) | WF ID: G36vfrSk2rFIFMKy
-
-### Phase V: Vendor-Link Shortcode
-- ✅ **V1** — Created layouts/shortcodes/vendor-link.html: looks up slug in affiliates.yaml, links to affiliateUrl (active) or websiteUrl (pending), renders text-only if slug not found (2026-03-18)
-- ✅ **V2** — Updated all 6 articles: changed author to "RecoGuides Team", added vendor-link shortcodes on first and last vendor mention in every article body (2026-03-18)
-- ✅ **V3** — Added Wave to affiliates.yaml (was mentioned in freshbooks-vs-wave article but missing from data file) (2026-03-18)
-
-### Phase A: Affiliate Intake
-- ✅ **A1** — ADD AFFILIATE Telegram command integrated into WF2: operator sends "ADD AFFILIATE [company] [websiteUrl] [affiliateUrl or PENDING] [commission]" → auto-adds to affiliates.yaml → pushes to GitHub → Telegram confirmation (2026-03-18)
-
-### Phase 4: Weekly Recurring Tasks
-*(Begin after first 5 articles are published)*
-- ✅ Set up Monday news search routine across all tracked products (N1–N3)
-- ✅ Set up article writing triggers for Sunday/Wednesday/Friday (N5-N7)
-- [ ] Research and pitch 1-2 new verticals to operator
-- [ ] Maintain 2 evergreen articles per active vertical per week
-
----
-
-## n8n Workflow Registry
-
-| ID | Name | Trigger | Status |
-|----|------|---------|--------|
-| 9roSxKaRZZGYpnEn | Monday Content Research | Every Monday 8am ET | ✅ Active |
-| 4IPu8y21vF8fq6xS | Telegram Reply Handler | Every 2 minutes | ✅ Active |
-| nGDPGYr3phHsEnkB | N5: Sunday PM Article Writer | Sunday 8am ET | ✅ Active |
-| oJj2xfABVYz6LaJG | N6: Wednesday TT Article Writer | Wednesday 8am ET | ✅ Active |
-| G36vfrSk2rFIFMKy | N7: Friday Invoicing Article Writer | Friday 8am ET | ✅ Active |
+## Manual Tasks for Operator
+- [ ] Apply for Impact.com affiliate account
+- [ ] Apply for ShareASale affiliate account
+- [ ] Apply for CJ Affiliate account
+- [ ] Apply for Rakuten account
+- [ ] Follow up on ClickUp PartnerStack application
+- [ ] Apply for Asana affiliate on PartnerStack
+- [ ] Apply for Monday.com affiliate on PartnerStack
+- [ ] Regenerate n8n API key (exposed in conversation — go to n8n → Settings → API)
+- [ ] Verify Google AdSense account approved and serving ads (ca-pub-5124318262377242)
+- [ ] Set up Buffer profiles for LinkedIn and Twitter/X (needed for N10 Marketing Agent)
 
 ---
 
@@ -126,7 +142,7 @@
 | ClickUp | PartnerStack | ✅ | [ ] | [ ] |
 | Asana | PartnerStack | [ ] | [ ] | [ ] |
 | Monday.com | PartnerStack | [ ] | [ ] | [ ] |
-| FreshBooks | ShareASale | [ ] | [ ] | [ ] |
+| FreshBooks | ShareASale/Direct | [ ] | [ ] | [ ] |
 | Toggl Track | Direct | [ ] | [ ] | [ ] |
 | Harvest | Direct | [ ] | [ ] | [ ] |
 | Clockify | Direct | [ ] | [ ] | [ ] |
@@ -135,8 +151,9 @@
 ---
 
 ## Blockers / Notes
-- GitHub token may expire — if GitHub API calls fail with 401, notify operator for new token
+- n8n API key was exposed in Claude conversation on 2026-03-17 — regenerate ASAP
+- GitHub token in CREDENTIALS.local may expire — if 401 errors occur, generate new token at github.com
 - Netlify token may expire — same protocol
-- All affiliate URLs currently PENDING — shortcodes render but link to product homepages until active
-- GITHUB_TOKEN in n8n-docker/.env is invalid (ghp_Hs8W7...) — use CREDENTIALS.local token (ghp_QMeT...) for all GitHub operations
-- Netlify deploy rule: batch all session changes, trigger ONE deploy at end of session only
+- All affiliate URLs PENDING — vendor-link shortcodes render but link to websiteUrl until active
+- Buffer profiles needed for N10 Marketing Agent — set up LinkedIn + Twitter/X profiles in Buffer, confirm BUFFER_API_KEY works
+- N8 Article Writer webhook URL: http://localhost:5678/webhook/article-writer
