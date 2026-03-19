@@ -3,125 +3,103 @@
 
 ---
 
-## Session: 2026-03-18 — Vendor-Link Shortcode + N4-N7 Workflows
+## Session: 2026-03-17 — n8n Foundation (WF1, WF2, N2/N3)
 
 ### What Was Built
 
-#### TASK 1: vendor-link shortcode
-- Created `layouts/shortcodes/vendor-link.html`
-- Looks up vendor slug in `site.Data.affiliates`
-- active status → links to `affiliateUrl`
-- pending status → links to `websiteUrl`
-- slug not found → renders slug as plain text (no error)
-- Tested by adding to all 6 existing articles
+Monday Content Research pipeline (WF1) + Telegram Reply Handler (WF2).
 
-#### TASK 2: Updated all 6 articles
-- Changed `author: "Etai Ocarn"` → `author: "RecoGuides Team"` in all frontmatter
-- Added `{{< vendor-link "slug" >}}` on FIRST and LAST mention of each vendor in every article body
-- Added Wave to `data/affiliates.yaml` (was missing, mentioned in freshbooks-vs-wave article)
-- Added `wave` to `products:` list in freshbooks-vs-wave-freelancers-2026.md
+**WF1 flow:** Every Monday 8am ET → Tavily (7 products × 3 queries = 21 searches) → Fetch Existing Articles (GitHub tree API, `content/productivity-tools/`) → Gemini scoring + Jaccard dedup → calendar_state.json + CONTENT_CALENDAR.md pushed to GitHub → Telegram HTML message.
 
-#### TASK 3: Affiliate intake via Telegram (ADD AFFILIATE command)
-- Integrated into WF2 (Telegram Reply Handler, id=4IPu8y21vF8fq6xS)
-- Command format: `ADD AFFILIATE [company] [websiteUrl] [affiliateUrl or PENDING] [commission]`
-- Example: `ADD AFFILIATE Notion https://notion.so PENDING 20%`
-- Auto-generates slug (lowercase, hyphens), adds full YAML entry, pushes to GitHub, confirms via Telegram
-- Handles duplicates gracefully (notifies if slug already exists)
-- Sends usage hint if command format is invalid
+**WF2 flow:** Polls every 2 minutes → handles `OK` (approve calendar) and `REPLACE [slot#] [title]` (swap + regenerate calendar + resend).
 
-#### TASK 4: N4-N7 Writing Trigger Workflows
+**Workflow IDs at time of build:**
+- WF1 Monday Content Research: `9roSxKaRZZGYpnEn` (still active)
+- WF2 Telegram Reply Handler: `4IPu8y21vF8fq6xS` (replaced in Session 3)
 
-**N4 (Breaking News — integrated into WF2 OK handler):**
-- When operator sends OK to approve calendar AND a BREAKING slot exists:
-  1. Writes breaking news article via Gemini (800-1000 words)
-  2. Pushes to `content/productivity-tools/{category}/{slug}.md`
-  3. Triggers Netlify deploy
-  4. Sends Telegram confirmation with URL
+**Also deployed in 2026-03-17 (then deleted):**
+- N5: Sunday PM Article Writer
+- N6: Wednesday TT Article Writer
+- N7: Friday Invoicing Article Writer
 
-**N5 (Sunday 8am ET — Project Management):** WF id=nGDPGYr3phHsEnkB
-**N6 (Wednesday 8am ET — Time Tracking):** WF id=oJj2xfABVYz6LaJG
-**N7 (Friday 8am ET — Invoicing):** WF id=G36vfrSk2rFIFMKy
-
-All three follow the same pipeline:
-1. Schedule trigger (Sunday/Wednesday/Friday 8am ET)
-2. Read `workspace/calendar_state.json` from GitHub
-3. Check `state.approved === true`
-4. Find the matching category slot (EVERGREEN type, not already published)
-5. Check `slot.published` — skip if already done this week
-6. Write full article via Gemini (1,400-1,800 words, following all MISSION/OPERATIONS rules)
-7. Push to GitHub at correct `content/productivity-tools/{category}/{slug}.md` path
-8. Mark slot as `published: true` in `calendar_state.json`
-9. Trigger Netlify deploy + poll until `state: ready` (up to 3 min)
-10. Send Telegram: ✅ Article live + URL
-
-**Skip behavior:** If calendar not approved, slot missing, or already published — sends ℹ️ Telegram note and halts.
-
-**Article content rules enforced in prompt:**
-- 1,400-1,800 words (800-1,000 for breaking news)
-- Author: "RecoGuides Team"
-- Full frontmatter with SEO fields
-- `{{< vendor-link "slug" >}}` on first + last vendor mention
-- `{{< affiliate-cta "slug" >}}` after each vendor section
-- Never hardcode URLs
-- Ends with Bottom Line / Final Verdict
+**Known issue from Session 2:** GITHUB_TOKEN duplicate in CREDENTIALS.local. Line 1 has the valid token. The Python deploy scripts use first-occurrence-wins to get the correct token. Docker's env_file uses last-write-wins, so n8n container may use wrong token. Fix: remove duplicate line from CREDENTIALS.local.
 
 ---
 
-## Session: 2026-03-17 — n8n Automation Build (N1–N3)
+## Session: 2026-03-19 — n8n Workflow Suite v2 + Strategy Update
+
+### What Changed (Strategy)
+
+MISSION.md and OPERATIONS.md updated with new strategy:
+- **Author byline**: Changed from "Etai Ocarn" → "RecoGuides Team" on all articles
+- **Primary revenue**: Google AdSense (not just affiliate)
+- **Content model**: Daily briefing-driven (7am ET → operator selects → write → batch deploy)
+- **Content paths**: `content/productivity-tools/{subcategory}/{slug}.md` (confirmed correct)
+- **Frontmatter**: Added required `summary` field; removed `categories` field; added `vendor-link` shortcode usage
+- **Theme**: Confirmed PaperMod (not hello-friend-ng)
 
 ### What Was Built
 
-**Pipeline flow (Workflow 1 — Monday Content Research):**
-1. Every Monday 8am ET — Schedule trigger
-2. Tavily API: 7 products × 3 query types = 21 searches, `days: 7`
-3. Fetch Existing Articles — GitHub Git Tree API, lists all `.md` under `content/productivity-tools/`
-4. Score with Gemini — `gemini-2.0-flash`, 6 suggestions with dedup (Jaccard 0.45 + slug match)
-5. Generate & Push Calendar — `CONTENT_CALENDAR.md` + `calendar_state.json` → GitHub `workspace/`
-6. Format & Send Telegram — dated slots format
+**deploy_v2.py** — `~/n8n-docker/deploy_v2.py`
 
-**Pipeline flow (Workflow 2 — Telegram Reply Handler):**
-- Runs every 2 minutes
-- Polls `getUpdates` with persistent `lastUpdateId` via `$getWorkflowStaticData`
-- `OK` → approves calendar + triggers N4 (breaking news) if present
-- `REPLACE [slot#] [new title]` → swaps title, regenerates calendar, resends
-- `ADD AFFILIATE ...` → adds to affiliates.yaml (NEW in 2026-03-18 session)
+Deploys all v2 workflows in one script. Run: `cd ~/n8n-docker && python3 deploy_v2.py`
 
----
+#### WF2 — Telegram Reply Handler (updated, id: BitiIHgtAwP1pAPN)
+Now handles all commands:
+- `OK` — approve weekly content calendar
+- `REPLACE [slot#] [title]` — swap calendar slot
+- `WRITE [slot#]` — trigger article writer for specific slot
+- `WRITE ALL` — write all pending calendar slots
+- `WRITE BREAKING` — write all breaking news slots
+- `SKIP` — cancel today's morning briefing
+- `1 3 5` (numbers) — select articles from morning briefing
 
-## Current n8n Workflow IDs
+#### N8 — Unified Article Writer (id: RvnAoHhWRyFx10xu)
+- **Trigger**: Webhook POST to `http://localhost:5678/webhook/article-writer`
+- **Input**: `{ "slot": 1 }` | `{ "slots": [1,2] }` | `{ "write_all": true }` | `{ "type": "breaking" }`
+- **Flow**: Read calendar_state.json → generate article with Gemini → pre-publish checklist (affiliates.yaml) → push to `content/productivity-tools/{subcategory}/{slug}.md` → update calendar state → Telegram confirmation
+- **Author**: "RecoGuides Team"
+- **Frontmatter**: Includes `summary` field, no `categories` field, `verticals: ["productivity-tools"]`
+- **Shortcodes**: vendor-link on first/last product mention, affiliate-cta after sections, tweet embeds for breaking/digest
+- **Content types**: BREAKING (800-1000w), EVERGREEN (1500-1800w), DIGEST (800-1000w)
+
+#### N9 — Daily Morning Briefing (id: gjo7ZtOLPv3fdulK)
+- **Schedule**: Every day 7am ET (`0 7 * * *`)
+- **Flow**: Tavily searches (9 queries, AI/SMB news, days:1) → Gemini compiles 8-10 headlines → save briefing_state.json to GitHub → send Telegram numbered list
+- **State file**: `workspace/briefing_state.json`
+- **Telegram format**: Breaking News section + Evergreen/Trending section, numbered sequentially
+- **Replies**: Numbers (e.g. `1 3 5`) → saved to briefing_state.json → `WRITE ALL` to draft selected articles
+- **SKIP**: Cancels the day — marks briefing_state.json as skipped
+
+#### N10 — Marketing Agent (id: G0yFabAVwCIANg4K)
+- **Schedule**: Every 5 minutes (`*/5 * * * *`)
+- **Flow**: Check latest Netlify deploy (state: "ready") → compare to last processed deploy ID (static data) → if new: get changed content/ files from recent commits → Gemini drafts LinkedIn + Twitter/X posts per article → Buffer API queues posts staggered (9am ET + 2h per article) → Telegram confirmation
+- **Buffer API**: `POST https://api.bufferapp.com/1/updates/create.json` with `access_token=BUFFER_API_KEY`, `profile_ids[]`, `text`, `scheduled_at`
+- **State**: Persisted in n8n workflow static data (`sd.lastProcessedDeploy`, `sd.lastProcessedAt`)
+- **Note**: Requires Buffer profiles set up — if no profiles found, posts are drafted but not queued
+
+### Current n8n Workflow IDs
 
 | Workflow | Name | ID | Status |
 |----------|------|----|--------|
 | WF1 | Monday Content Research | `9roSxKaRZZGYpnEn` | ✅ Active |
-| WF2 | Telegram Reply Handler | `4IPu8y21vF8fq6xS` | ✅ Active |
-| N5 | Sunday PM Article Writer | `nGDPGYr3phHsEnkB` | ✅ Active |
-| N6 | Wednesday TT Article Writer | `oJj2xfABVYz6LaJG` | ✅ Active |
-| N7 | Friday Invoicing Article Writer | `G36vfrSk2rFIFMKy` | ✅ Active |
+| WF2 | Telegram Reply Handler | `BitiIHgtAwP1pAPN` | ✅ Active |
+| N8 | Unified Article Writer | `RvnAoHhWRyFx10xu` | ✅ Active |
+| N9 | Daily Morning Briefing | `gjo7ZtOLPv3fdulK` | ✅ Active |
+| N10 | Marketing Agent | `G0yFabAVwCIANg4K` | ✅ Active |
+
+**Deleted:** N5 (Sunday PM), N6 (Wednesday TT), N7 (Friday Invoicing)
+
+---
+
+## Infrastructure Reference
 
 **n8n URL:** http://localhost:5678
-**Deploy script:** `~/n8n-docker/update_workflow.py`
+**Deploy script:** `~/n8n-docker/deploy_v2.py`
+**Article Writer webhook:** `http://localhost:5678/webhook/article-writer`
+**Credentials:** `~/openclaw-docker/workspace/CREDENTIALS.local`
 
----
-
-## Known Issues
-
-1. **GITHUB_TOKEN in n8n-docker/.env is invalid** — Use CREDENTIALS.local token (`ghp_QMeTSf...`). The n8n container loads `.env` first. Fix: remove invalid token line from `.env`, recreate container.
-
-2. **content/productivity-tools/ path** — All articles are under `content/productivity-tools/project-management/`, `time-tracking/`, `invoicing/`. WF1 dedup node filters for this path. Confirmed correct.
-
-3. **Netlify deploy rule** — During Claude Code sessions: batch all changes, trigger ONE deploy at end. Do not trigger per-file. Production workflows (N4-N7) may trigger deploys independently as part of their publish pipeline.
-
-4. **Gemini 429 rate limiting** — Free tier quota exhausted during rapid test runs. Not an issue in production (runs once weekly). Falls back to hardcoded suggestions.
-
-5. **WF1_ID hardcoded in update_workflow.py** — Every deploy creates a new workflow with a new ID. Current IDs are in the registry above.
-
----
-
-## Credentials Reference
-
-All credentials live in **`~/openclaw-docker/workspace/CREDENTIALS.local`**.
-Python loading pattern (first-occurrence-wins):
-
+### Credential load order (first-occurrence-wins):
 ```python
 env = {}
 for path in ['~/openclaw-docker/workspace/CREDENTIALS.local', '~/n8n-docker/.env']:
@@ -133,14 +111,25 @@ for path in ['~/openclaw-docker/workspace/CREDENTIALS.local', '~/n8n-docker/.env
                     env[k.strip()] = v.strip()
 ```
 
-Keys: `GITHUB_TOKEN`, `NETLIFY_TOKEN`, `NETLIFY_SITE_ID`, `TAVILY_API_KEY`, `TELEGRAM_BOT_TOKEN`, `TELEGRAM_CHAT_ID`, `GEMINI_API_KEY`, `N8N_API_KEY`
+Keys: `GITHUB_TOKEN`, `NETLIFY_TOKEN`, `NETLIFY_SITE_ID`, `TAVILY_API_KEY`, `TELEGRAM_BOT_TOKEN`, `TELEGRAM_CHAT_ID`, `GEMINI_API_KEY`, `N8N_API_KEY`, `BUFFER_API_KEY`
 
 ---
 
 ## What to Do Next Session
 
-1. **Test the full pipeline** — Wait for next Monday 8am trigger (or manually execute WF1), send OK, verify N5 fires Sunday
-2. **Verify vendor-link renders correctly** — Check recoguides.com article pages for linked vendor names
-3. **Apply for affiliate networks** — Impact.com, ShareASale, CJ Affiliate, Rakuten (Task 5C)
-4. **Write next content batch** — 2D, 2E, 3C, 3D, 3E, 4B, 4C from queue
-5. **Update CREDENTIALS.local** — When new affiliate codes arrive, use ADD AFFILIATE command or update affiliates.yaml directly
+### Session 4: QC Checker Workflow
+Build n8n QC workflow that runs after each deploy:
+1. Wait for Netlify `state: "ready"`
+2. For each recently published article URL:
+   - HTTP GET — verify 200 response
+   - Check page source: no raw `{{<` shortcode text visible
+   - Check page source: AdSense script present (`ca-pub-5124318262377242`)
+   - Check content length (rough word count proxy)
+3. Telegram: ✅ all checks passed OR ⚠️ specific failures
+
+Coordinate with N10: both trigger on new Netlify deploy. QC runs after Marketing Agent.
+
+### Known Issues
+- Buffer profiles may not be configured yet — N10 will report "Buffer unavailable" until set up
+- N8 Article Writer: for breaking news without a calendar slot (from morning briefing selections), extend WRITE command to also accept `{ "briefing_items": [...] }` input — partially scaffolded
+- WF1 still uses `content/productivity-tools/` path correctly in Fetch Existing Articles node ✅
