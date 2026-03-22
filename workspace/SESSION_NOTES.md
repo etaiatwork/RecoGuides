@@ -291,6 +291,76 @@ Tracks all future-dated articles:
 
 ---
 
+## Session: 2026-03-22 — Missed-Run Watchdog + BRIEF Command
+
+### Context: The Missed-Run Problem
+
+n8n CE does **not** catch up missed cron runs after a container crash or restart. If n8n is down at 7am ET, that day's briefing is silently skipped with no alert. Root cause was confirmed in Session 4: Friday crash caused Saturday briefing miss. This session adds automatic detection and recovery.
+
+**Additional context:** Operator observes Sabbath (Friday sundown to Saturday night). The machine may be off or unmonitored during this window. Any briefing that fires Saturday morning before machine comes back will be missed. The watchdog handles this — if n8n restarts Saturday and N9 missed its 7am run, the watchdog fires it automatically before 11am, or warns via Telegram after 11am for BRIEF-on-demand recovery.
+
+---
+
+### What Was Built
+
+#### N9 — Daily Morning Briefing (updated)
+**New ID:** `pk2Gvf0rWSCbNJvB` (old: `gjo7ZtOLPv3fdulK`)
+**Change:** Added webhook trigger at `POST /webhook/morning-briefing`
+- Cron trigger (7am ET daily) preserved — unchanged behavior
+- Webhook trigger fires the same "Fetch News & Send Briefing" code node
+- `responseMode: onReceived` — responds 200 immediately, runs async
+- Deploy script: `~/n8n-docker/deploy_watchdog.py`
+
+#### N11 — Missed-Run Watchdog (new)
+**ID:** `kkstWmRQgTMsVlBv`
+**Schedule:** Every 30 minutes (`*/30 * * * *`)
+
+Flow:
+1. Look up N9's workflow ID by name via n8n API (robust: survives re-deployments)
+2. Fetch last 10 executions for N9
+3. Check if any execution has `status: success` or `status: running` AND `startedAt` date = today in ET
+4. If N9 already ran → exit silently
+5. If N9 has NOT run:
+   - Before 11am ET → POST to `http://localhost:5678/webhook/morning-briefing` (auto-recover)
+   - After 11am ET → Telegram: "⚠️ Today's briefing was missed. Reply BRIEF to get today's headlines now."
+
+**Why by-name lookup:** If N9 is ever re-deployed (changing its ID), the watchdog still works without needing a code update.
+
+#### WF2 — Telegram Reply Handler (updated)
+**New ID:** `ue1BErcKQilsVi1h` (old: `BitiIHgtAwP1pAPN`)
+**New command: `BRIEF`**
+
+| Command | Action |
+|---------|--------|
+| `BRIEF` | POST to `/webhook/morning-briefing` — triggers N9 on demand at any time |
+
+All previous commands (OK, REPLACE, WRITE, SKIP, SCHEDULE OFF, number selection) preserved unchanged.
+
+---
+
+### Updated Workflow ID Reference (as of 2026-03-22)
+
+| ID | Workflow | Schedule | Status |
+|----|----------|----------|--------|
+| `9roSxKaRZZGYpnEn` | WF1 — Monday Content Research | Monday 7am ET | ✅ Active |
+| `ue1BErcKQilsVi1h` | WF2 — Telegram Reply Handler | Every 2 min | ✅ Active |
+| `RvnAoHhWRyFx10xu` | N8 — Unified Article Writer | On demand (webhook) | ✅ Active |
+| `pk2Gvf0rWSCbNJvB` | N9 — Daily Morning Briefing | 7am ET + webhook | ✅ Active |
+| `G0yFabAVwCIANg4K` | N10 — Marketing Agent | Every 5 min | ✅ Active |
+| `kkstWmRQgTMsVlBv` | N11 — Missed-Run Watchdog | Every 30 min | ✅ Active |
+
+N9 webhook URL: `http://localhost:5678/webhook/morning-briefing`
+
+---
+
+### Operator Notes
+
+- **Sabbath observance:** Machine may be off Friday sundown (~5:30pm ET winter / ~7:30pm ET summer) through Saturday night. Any Saturday briefing missed while machine was down will be auto-recovered by watchdog when n8n restarts (before 11am), or queued for BRIEF reply (after 11am).
+- **BRIEF command:** Works at any time, any day — not just for missed runs. Useful whenever operator wants a fresh briefing outside the 7am schedule.
+- **Watchdog silent on success:** If N9 already ran, watchdog exits with no Telegram message. Only fires if there's a problem.
+
+---
+
 ## Next Session: Test Full Monday Pipeline End to End
 
 **Goal:** Confirm the complete Monday → article → deploy → social loop works without manual intervention.
