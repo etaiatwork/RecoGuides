@@ -4,18 +4,21 @@
 ---
 
 ## Current State
-**Last updated**: 2026-03-19
+**Last updated**: 2026-03-21
 **Site status**: ✅ Live at recoguides.com — PaperMod theme, full structure complete
 **Build status**: ✅ Hugo 0.146.0 building cleanly on Netlify
+**Theme mode**: ✅ Forced light mode (defaultTheme = "light", disableThemeToggle = true)
 **Active verticals**: 1 (Productivity Tools)
 **Articles published**: 6
 **Affiliate status**: All PENDING — awaiting approval
-**n8n**: ✅ Running at localhost:5678 — v2 workflow suite active
+**n8n**: ✅ Running at localhost:5678 — v2 workflow suite active (restarted clean 2026-03-21)
 **AdSense**: ✅ Script in layouts/partials/extend_head.html (ca-pub-5124318262377242)
-**Daily briefing**: ✅ N9 live — 7am ET every day
-**Article writing**: ✅ N8 unified writer live — all content types
+**Daily briefing**: ✅ N9 live — 7am ET every day (root cause of Saturday miss: n8n crash; now clean)
+**Article writing**: ✅ N8 unified writer — now supports briefing_items with scheduled publish dates
 **Marketing**: ✅ N10 live — polls Netlify, queues Buffer posts
 **Content calendar**: ✅ WF1 active (Monday 7am ET)
+**Scheduled publishing**: ✅ Live — operator can append date to article selection (TODAY/TOMORROW/SAT/date)
+**Schedule OFF**: ✅ Live — SCHEDULE OFF YYYY-MM-DD TO YYYY-MM-DD command blocks out dates
 
 ---
 
@@ -75,7 +78,23 @@
 
 ## Active Tasks
 
-### Session 4: QC Workflow
+### Session 4: Infrastructure Fixes + Scheduled Publishing ✅
+
+- ✅ **S4-1** — GITHUB_TOKEN duplicate check — no duplicate found, credentials clean (2026-03-21)
+- ✅ **S4-2** — n8n restarted clean — root cause of N9 Saturday miss: container crash between Fri/Sat (2026-03-21)
+- ✅ **S4-3** — N9 re-activated — will fire Sunday March 22 at 7am ET (2026-03-21)
+- ✅ **S4-4** — config.toml: added `defaultTheme = "light"` — site forced to light mode always (2026-03-21)
+- ✅ **S4-5** — WF2 (Telegram Reply Handler): date suffix parsing added to article selection (2026-03-21)
+  - "1, 3 TODAY" → publishes today; "2 TOMORROW"; "4 SAT"; "5 2026-03-28"
+  - SCHEDULE OFF YYYY-MM-DD TO YYYY-MM-DD command added
+- ✅ **S4-6** — N8 (Article Writer): briefing_items path added — uses publishDate per article (2026-03-21)
+  - Future-dated articles tracked in workspace/schedule_state.json
+  - Hugo date set to publishDate — articles held until then natively
+- ✅ **S4-7** — N9 (Daily Morning Briefing): checks schedule_state.json for articles going live today (2026-03-21)
+  - Checks calendar_state.json for upcoming blackout dates (warns 7 days in advance)
+  - Updated reply instructions in briefing message
+
+### Session 5: QC Workflow
 *(Next priority)*
 
 - [ ] **QC1** — Build post-publish QC checker workflow:
