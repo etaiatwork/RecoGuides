@@ -4,7 +4,7 @@
 ---
 
 ## Current State
-**Last updated**: 2026-03-22
+**Last updated**: 2026-03-22 (Session 6)
 **Site status**: ✅ Live at recoguides.com — PaperMod theme, full structure complete
 **Build status**: ✅ Hugo 0.146.0 building cleanly on Netlify
 **Theme mode**: ✅ Forced light mode (defaultTheme = "light", disableThemeToggle = true)
@@ -107,10 +107,18 @@
   - ID: `kkstWmRQgTMsVlBv`
 - ✅ **S5-3** — WF2 (Telegram Reply Handler): BRIEF command added (2026-03-22)
   - Reply `BRIEF` at any time → triggers N9 via `/webhook/morning-briefing`
-  - New ID: `ue1BErcKQilsVi1h`
+  - ID at end of Session 5: `ue1BErcKQilsVi1h` (rebuilt Session 6 → `Y37niVPuXzXpUJSY`)
 - ✅ **S5-4** — deploy_watchdog.py created at `~/n8n-docker/deploy_watchdog.py` (2026-03-22)
 
-### Session 6: QC Workflow
+### Session 6: Command Routing Fix ✅ (2026-03-22)
+
+- ✅ **S6-1** — Root cause identified: Grammy (OpenClaw) monopolizes Telegram long-poll slot; WF2 cron polling could never receive commands
+- ✅ **S6-2** — WF2 rebuilt with webhook trigger (`/webhook/wf2-router-in`); no more Telegram polling; new ID: `Y37niVPuXzXpUJSY`
+- ✅ **S6-3** — Fixed n8n 2.x webhook 404 bug: added `webhookId` to webhook nodes in N9, WF2, N8; all webhooks now return HTTP 200
+- ✅ **S6-4** — N8N_ROUTING.md updated: OpenClaw now exec-forwards n8n commands to WF2 webhook then stays silent
+- ✅ **S6-5** — telegram-router service abandoned (409 conflict unavoidable with Grammy)
+
+### Session 7: QC Workflow
 *(Next priority)*
 
 - [ ] **QC1** — Build post-publish QC checker workflow:

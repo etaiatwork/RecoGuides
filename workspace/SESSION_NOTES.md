@@ -432,6 +432,95 @@ cd ~/n8n-docker && docker compose up -d --force-recreate
 
 ---
 
+---
+
+## Session: 2026-03-22 — Command Routing Fix (Session 6)
+
+### Problem
+
+BRIEF and all other n8n commands sent via Telegram were being intercepted by OpenClaw instead of reaching WF2. OpenClaw responded conversationally.
+
+### Root Cause
+
+Two competing Telegram `getUpdates` consumers on the same bot token:
+1. **Grammy (OpenClaw)** — long-poll, `timeout=30`, monopolizes the connection
+2. **WF2 (n8n cron)** — every 2 minutes, `timeout=0` short-poll
+
+Grammy always held the slot first. WF2 got empty results or 409 Conflict. OpenClaw received every message and processed it through the AI pipeline.
+
+### What Was Built
+
+#### Phase 1: telegram-router service (abandoned)
+Created `~/telegram-router/router.py` — standalone short-poll Python service that detects n8n command patterns and forwards to WF2 webhook. Installed as user systemd service.
+
+**Problem:** Grammy's long-poll monopolizes Telegram entirely. Even `timeout=0` calls get HTTP 409 Conflict when Grammy has an active connection. The router was getting 409 continuously. **Abandoned.**
+
+#### Phase 2: WF2 rebuilt with webhook trigger
+`deploy_s6_router.py` rebuilt WF2:
+- Removed cron + getUpdates polling from WF2
+- Added webhook trigger at `POST /webhook/wf2-router-in`
+- All command parsing logic unchanged
+
+**New WF2 ID:** `Y37niVPuXzXpUJSY`
+
+#### Phase 3: n8n webhook 404 bug fix (root cause in n8n 2.x)
+
+**Bug:** n8n 2.12.2 uses Express 5. `getNodeWebhookPath()` stores webhook paths as `workflowId/encodeURIComponent(nodeName)/path` (e.g., `pk2G.../webhook%20trigger/morning-briefing`). Express 5 URL-decodes path params before lookup → stored `%20` ≠ decoded space → **every webhook was 404**.
+
+**Fix:** Add `webhookId` to each webhook node. When `webhookId` is set + `isFullPath=true` (default for n8n-nodes-base.webhook), `getNodeWebhookPath` returns just `path` directly. URL is simply `/webhook/path-name`.
+
+Applied to:
+- N9 webhook node: `webhookId: "morning-briefing-n9"`
+- WF2 webhook node: `webhookId: "wf2-router-in"`
+- N8 webhook node: `webhookId: "article-writer"`
+
+Then deactivated/reactivated each workflow to re-register webhooks.
+
+**Result:** All three webhooks now return HTTP 200.
+
+#### Phase 4: OpenClaw as the router
+
+Updated `N8N_ROUTING.md` to instruct OpenClaw to:
+1. When it receives an n8n command, use `exec` tool to `curl http://localhost:5678/webhook/wf2-router-in`
+2. Then produce zero Telegram output
+
+This uses Grammy's existing long-poll (which always works) as the message receiver. OpenClaw exec-forwards commands to WF2, then stays silent. WF2 handles all replies.
+
+### Final Architecture
+
+```
+Telegram message
+  → Grammy (OpenClaw long-poll) receives it
+  → OpenClaw checks N8N_ROUTING.md
+  → If n8n command: exec curl → WF2 webhook → n8n processes → Telegram reply
+  → If real message: OpenClaw responds normally
+```
+
+### Updated Workflow ID Reference (as of 2026-03-22 Session 6)
+
+| ID | Workflow | Trigger | Status |
+|----|----------|---------|--------|
+| `9roSxKaRZZGYpnEn` | WF1 — Monday Content Research | Monday 7am ET | ✅ Active |
+| `Y37niVPuXzXpUJSY` | WF2 — Telegram Reply Handler | POST /webhook/wf2-router-in | ✅ Active |
+| `RvnAoHhWRyFx10xu` | N8 — Unified Article Writer | POST /webhook/article-writer | ✅ Active |
+| `pk2Gvf0rWSCbNJvB` | N9 — Daily Morning Briefing | 7am ET + /webhook/morning-briefing | ✅ Active |
+| `G0yFabAVwCIANg4K` | N10 — Marketing Agent | Every 5 min | ✅ Active |
+| `kkstWmRQgTMsVlBv` | N11 — Missed-Run Watchdog | Every 30 min | ✅ Active |
+
+All webhook URLs confirmed working (HTTP 200).
+
+### N8N_ROUTING.md Change
+
+Updated to include exec-forward instruction. When OpenClaw sees an n8n command pattern, it runs:
+```bash
+curl -s -X POST http://localhost:5678/webhook/wf2-router-in \
+  -H "Content-Type: application/json" \
+  -d '{"text":"<THE_MESSAGE>","chat_id":"6424406212"}'
+```
+Then sends nothing back to Telegram.
+
+---
+
 ## Infrastructure Quick Reference
 
 | Thing | Location |
@@ -440,6 +529,8 @@ cd ~/n8n-docker && docker compose up -d --force-recreate
 | Deploy script | `~/n8n-docker/deploy_v2.py` |
 | GitHub push script | `~/n8n-docker/push_to_github.py` |
 | Article Writer webhook | `http://localhost:5678/webhook/article-writer` |
+| Morning Briefing webhook | `http://localhost:5678/webhook/morning-briefing` |
+| WF2 Router webhook | `http://localhost:5678/webhook/wf2-router-in` |
 | Credentials | `~/openclaw-docker/workspace/CREDENTIALS.local` |
 | Hugo site repo | `~/RecoGuides/` |
 | Workspace (authoritative) | `~/openclaw-docker/workspace/` |
