@@ -12,7 +12,7 @@ When you receive a Telegram message that **exactly matches** one of the patterns
 
 1. **Silently run this exec command** (replace `<MSG>` with the exact message text):
    ```
-   curl -s -X POST http://localhost:5678/webhook/wf2-router-in -H "Content-Type: application/json" -d '{"text":"<MSG>","chat_id":"6424406212"}'
+   curl -s -X POST http://172.17.0.1:5678/webhook/wf2-router-in -H "Content-Type: application/json" -d '{"text":"<MSG>","chat_id":"6424406212"}'
    ```
 2. **Send NOTHING back to Telegram.** Zero words. No acknowledgment. Absolute silence.
 
