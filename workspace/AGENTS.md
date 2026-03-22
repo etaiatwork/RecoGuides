@@ -35,6 +35,8 @@ When you receive a Telegram message that **exactly matches** one of the patterns
 
 **What "zero output" means:** Do NOT say "Got it", "Done", "OK", "✓", or anything. The exec runs, then your turn ends with no text output.
 
+**If the curl fails** (non-zero exit, connection refused, etc.): respond with exactly `⚠️ n8n offline — command not delivered. Try again in a moment.` so the operator knows routing failed.
+
 ---
 
 ## First Run
