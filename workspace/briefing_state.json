@@ -1,8 +1,8 @@
 {
   "date": "2026-03-22T18:07:22.823Z",
   "dateStr": "Sunday, March 22, 2026",
-  "pending": true,
-  "status": "awaiting_selection",
+  "pending": false,
+  "status": "articles_selected",
   "items": [
     {
       "n": 1,
@@ -61,6 +61,32 @@
       "relevance": "From search results"
     }
   ],
-  "selected": [],
-  "skipped": false
+  "selected": [
+    {
+      "n": 1,
+      "headline": "The 6 best AI tools for small businesses in 2026 · Missive Blog",
+      "source": "missiveapp.com",
+      "url": "https://missiveapp.com/blog/best-ai-tools-for-small-businesses",
+      "relevance": "From search results",
+      "publishDate": "2026-03-22"
+    },
+    {
+      "n": 3,
+      "headline": "How small businesses can win with AI and Automation - YouTube",
+      "source": "www.youtube.com",
+      "url": "https://www.youtube.com/watch?v=ZGgaYTeAC6g",
+      "relevance": "From search results",
+      "publishDate": "2026-03-22"
+    },
+    {
+      "n": 5,
+      "headline": "AI Impact: Are Your Teams Quietly Replacing SaaS? - Newsweek",
+      "source": "www.newsweek.com",
+      "url": "https://www.newsweek.com/nw-ai/ai-impact-are-your-teams-quietly-replacing-saas-11620488",
+      "relevance": "From search results",
+      "publishDate": "2026-03-22"
+    }
+  ],
+  "skipped": false,
+  "selectedAt": "2026-03-22T18:08:20.194Z"
 }
