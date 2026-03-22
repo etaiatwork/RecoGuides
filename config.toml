@@ -12,6 +12,7 @@ googleAnalytics = "G-JVSLQ905JV"
   title = "RecoGuides"
   description = "Honest, data-driven comparisons to help you choose the right tools for your business."
   author = "Etai Ocarn"
+  defaultTheme = "light"
   disableThemeToggle = true
   disableSpecial1stPost = true
   ShowReadingTime = true
