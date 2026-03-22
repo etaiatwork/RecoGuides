@@ -4,7 +4,7 @@
 ---
 
 ## Current State
-**Last updated**: 2026-03-21
+**Last updated**: 2026-03-22
 **Site status**: ✅ Live at recoguides.com — PaperMod theme, full structure complete
 **Build status**: ✅ Hugo 0.146.0 building cleanly on Netlify
 **Theme mode**: ✅ Forced light mode (defaultTheme = "light", disableThemeToggle = true)
@@ -13,12 +13,13 @@
 **Affiliate status**: All PENDING — awaiting approval
 **n8n**: ✅ Running at localhost:5678 — v2 workflow suite active (restarted clean 2026-03-21)
 **AdSense**: ✅ Script in layouts/partials/extend_head.html (ca-pub-5124318262377242)
-**Daily briefing**: ✅ N9 live — 7am ET every day (root cause of Saturday miss: n8n crash; now clean)
+**Daily briefing**: ✅ N9 live — 7am ET cron + webhook trigger; missed-run watchdog (N11) active
 **Article writing**: ✅ N8 unified writer — now supports briefing_items with scheduled publish dates
 **Marketing**: ✅ N10 live — polls Netlify, queues Buffer posts
 **Content calendar**: ✅ WF1 active (Monday 7am ET)
 **Scheduled publishing**: ✅ Live — operator can append date to article selection (TODAY/TOMORROW/SAT/date)
 **Schedule OFF**: ✅ Live — SCHEDULE OFF YYYY-MM-DD TO YYYY-MM-DD command blocks out dates
+**Missed-run watchdog**: ✅ N11 live — auto-recovers missed N9 runs; BRIEF command for manual trigger
 
 ---
 
@@ -94,7 +95,22 @@
   - Checks calendar_state.json for upcoming blackout dates (warns 7 days in advance)
   - Updated reply instructions in briefing message
 
-### Session 5: QC Workflow
+### Session 5: Missed-Run Watchdog (2026-03-22) ✅
+
+- ✅ **S5-1** — N9 (Daily Morning Briefing): webhook trigger added at `/webhook/morning-briefing` (2026-03-22)
+  - Cron trigger (7am ET) preserved; same code node runs for both triggers
+  - New ID: `pk2Gvf0rWSCbNJvB`
+- ✅ **S5-2** — N11 (Missed-Run Watchdog): new workflow — every 30 minutes (2026-03-22)
+  - Looks up N9 by name via n8n API (survives re-deployments)
+  - If N9 has NOT run today and time < 11am ET → triggers N9 via webhook
+  - If N9 has NOT run today and time ≥ 11am ET → Telegram: "⚠️ Today's briefing was missed. Reply BRIEF to get today's headlines now."
+  - ID: `kkstWmRQgTMsVlBv`
+- ✅ **S5-3** — WF2 (Telegram Reply Handler): BRIEF command added (2026-03-22)
+  - Reply `BRIEF` at any time → triggers N9 via `/webhook/morning-briefing`
+  - New ID: `ue1BErcKQilsVi1h`
+- ✅ **S5-4** — deploy_watchdog.py created at `~/n8n-docker/deploy_watchdog.py` (2026-03-22)
+
+### Session 6: QC Workflow
 *(Next priority)*
 
 - [ ] **QC1** — Build post-publish QC checker workflow:
