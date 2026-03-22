@@ -230,6 +230,67 @@ Deploy script: `~/n8n-docker/deploy_v2.py` — redeploys all v2 workflows from s
 
 ---
 
+## Session: 2026-03-21 — Infrastructure Fixes + Scheduled Publishing
+
+### Task 1: GITHUB_TOKEN Duplicate
+No duplicate found — CREDENTIALS.local was already clean. n8n restarted to pick up clean env.
+
+### Task 2: N9 Daily Morning Briefing — Root Cause
+**Root cause**: n8n container crashed between Friday 7am and Saturday 7am.
+- Friday March 20: N9 fired at 7am ET but execution errored in 17ms (crash in progress)
+- Saturday March 21: n8n was down/restarted — NO execution recorded (n8n doesn't catch up missed crons)
+- n8n logs show: "Last session crashed"
+**Fix**: n8n restarted clean. N9 is active and will fire Sunday March 22 at 7am ET.
+**Prevention note**: If n8n crashes, the next scheduled run will be missed. No automatic recovery.
+
+### Task 3: Force Light Mode
+Added `defaultTheme = "light"` to `~/RecoGuides/config.toml`.
+`disableThemeToggle = true` was already set. Site now always loads light regardless of OS setting.
+
+### Task 4: Scheduled Publishing
+
+#### How it works:
+1. Operator selects articles with optional date suffix:
+   - `1 3` → publishes both today
+   - `2 TOMORROW` → publishes item 2 tomorrow
+   - `4 SAT` → this Saturday (or next if already past)
+   - `5 2026-03-28` → exact date
+   - Day keywords: MON/TUE/WED/THU/FRI/SAT/SUN
+2. WF2 saves publishDate to each item in briefing_state.json
+3. Operator sends `WRITE ALL` → WF2 passes briefing_items (with publishDate) to N8
+4. N8 writes article with `date: YYYY-MM-DDT12:00:00Z` in Hugo frontmatter
+5. Future-dated articles tracked in `workspace/schedule_state.json`
+6. Hugo natively holds future-dated articles until their publish date
+
+#### SCHEDULE OFF command:
+- Send: `SCHEDULE OFF 2026-03-28 TO 2026-03-30`
+- WF2 saves to `blackoutDates[]` in calendar_state.json
+- N9 daily briefing checks for upcoming blackouts (warns 7 days in advance)
+
+#### Daily briefing enhancements:
+- Checks schedule_state.json → shows "Going Live Today" section for future-dated articles
+- Checks calendar_state.json → shows "Schedule Reminder" for upcoming blackout dates
+- Updated reply instructions include date format examples
+
+#### New file: workspace/schedule_state.json
+Tracks all future-dated articles:
+```json
+{
+  "scheduled": [
+    { "publishDate": "2026-03-28", "title": "...", "path": "content/...", "writtenAt": "..." }
+  ]
+}
+```
+
+#### Workflow IDs (unchanged):
+| ID | Workflow | Changes |
+|----|----------|---------|
+| BitiIHgtAwP1pAPN | WF2 — Telegram Reply Handler | Date parsing + SCHEDULE_OFF + briefing_items pass-through |
+| RvnAoHhWRyFx10xu | N8 — Unified Article Writer | briefing_items path + schedule_state tracking |
+| gjo7ZtOLPv3fdulK | N9 — Daily Morning Briefing | todayAlerts + blackoutAlerts in briefing |
+
+---
+
 ## Next Session: Test Full Monday Pipeline End to End
 
 **Goal:** Confirm the complete Monday → article → deploy → social loop works without manual intervention.
