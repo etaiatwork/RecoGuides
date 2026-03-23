@@ -1,8 +1,8 @@
 {
   "date": "2026-03-23T23:01:09.858Z",
   "dateStr": "Monday, March 23, 2026",
-  "pending": true,
-  "status": "awaiting_selection",
+  "pending": false,
+  "status": "articles_selected",
   "items": [
     {
       "n": 1,
@@ -61,6 +61,32 @@
       "relevance": "From search results"
     }
   ],
-  "selected": [],
-  "skipped": false
+  "selected": [
+    {
+      "n": 1,
+      "headline": "11 AI Tools for Small Businesses (Low Cost, Big Impact!) | Dialpad",
+      "source": "www.dialpad.com",
+      "url": "https://www.dialpad.com/blog/ai-tools-for-small-business/",
+      "relevance": "From search results",
+      "publishDate": "2026-03-23"
+    },
+    {
+      "n": 5,
+      "headline": "Software & SaaS Breaking News and Press Releases",
+      "source": "www.businesswire.com",
+      "url": "https://www.businesswire.com/newsroom/industry/technology/software",
+      "relevance": "From search results",
+      "publishDate": "2026-03-23"
+    },
+    {
+      "n": 6,
+      "headline": "What AI SaaS tools are you actually using daily?",
+      "source": "www.reddit.com",
+      "url": "https://www.reddit.com/r/SaaS/comments/1rx2829/what_ai_saas_tools_are_you_actually_using_daily/",
+      "relevance": "From search results",
+      "publishDate": "2026-03-23"
+    }
+  ],
+  "skipped": false,
+  "selectedAt": "2026-03-23T23:02:27.752Z"
 }
