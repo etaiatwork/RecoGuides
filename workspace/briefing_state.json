@@ -1,92 +1,66 @@
 {
-  "date": "2026-03-23T11:10:01.327Z",
+  "date": "2026-03-23T23:01:09.858Z",
   "dateStr": "Monday, March 23, 2026",
-  "pending": false,
-  "status": "articles_selected",
+  "pending": true,
+  "status": "awaiting_selection",
   "items": [
     {
       "n": 1,
-      "headline": "The 6 best AI tools for small businesses in 2026",
-      "source": "missiveapp.com",
-      "url": "https://missiveapp.com/blog/best-ai-tools-for-small-businesses",
+      "headline": "11 AI Tools for Small Businesses (Low Cost, Big Impact!) | Dialpad",
+      "source": "www.dialpad.com",
+      "url": "https://www.dialpad.com/blog/ai-tools-for-small-business/",
       "relevance": "From search results"
     },
     {
       "n": 2,
-      "headline": "AI and Small Business News",
-      "source": "aiandyou.org",
-      "url": "https://aiandyou.org/small-business/news/",
+      "headline": "10 Best AI Tools for Small Businesses | Blog - Relay",
+      "source": "relayfi.com",
+      "url": "https://relayfi.com/blog/10-best-ai-tools-small-businesses/",
       "relevance": "From search results"
     },
     {
       "n": 3,
-      "headline": "AI News: Every Major Announcement From This Week",
-      "source": "www.youtube.com",
-      "url": "https://www.youtube.com/watch?v=V4un_4uTEHs",
+      "headline": "12 Best AI Tools for Small Businesses in 2026 - Nextiva",
+      "source": "www.nextiva.com",
+      "url": "https://www.nextiva.com/blog/best-ai-tools-for-small-business.html",
       "relevance": "From search results"
     },
     {
       "n": 4,
-      "headline": "Find The Newest SaaS Tools On The Market 2026 - SaaSGenius",
-      "source": "www.saasgenius.com",
-      "url": "https://www.saasgenius.com/new-tools/",
-      "relevance": "From search results"
-    },
-    {
-      "n": 5,
-      "headline": "SaaS AI Tools: 400+ generative AI tools & daily AI news | Product Hunt",
-      "source": "www.producthunt.com",
-      "url": "https://www.producthunt.com/products/saas-ai-tools",
-      "relevance": "From search results"
-    },
-    {
-      "n": 6,
-      "headline": "SaaS News - Crunchbase News",
+      "headline": "SaaS News",
       "source": "news.crunchbase.com",
       "url": "https://news.crunchbase.com/sections/saas/",
       "relevance": "From search results"
     },
     {
+      "n": 5,
+      "headline": "Software & SaaS Breaking News and Press Releases",
+      "source": "www.businesswire.com",
+      "url": "https://www.businesswire.com/newsroom/industry/technology/software",
+      "relevance": "From search results"
+    },
+    {
+      "n": 6,
+      "headline": "What AI SaaS tools are you actually using daily?",
+      "source": "www.reddit.com",
+      "url": "https://www.reddit.com/r/SaaS/comments/1rx2829/what_ai_saas_tools_are_you_actually_using_daily/",
+      "relevance": "From search results"
+    },
+    {
       "n": 7,
-      "headline": "11 Freelancer Tools That Save You Time (+ Earn More)",
-      "source": "weselltalent.com",
-      "url": "https://weselltalent.com/blog/freelancer-tools/",
+      "headline": "The 7 Best Tools for Freelancers in 2025 - Not-So-Modern Girl",
+      "source": "notsomoderngirl.com",
+      "url": "https://notsomoderngirl.com/2025/02/19/7-best-tools-for-freelancers/",
       "relevance": "From search results"
     },
     {
       "n": 8,
-      "headline": "50+ Free Tools Every Freelancer Needs in 2025 - Jobbers",
-      "source": "www.jobbers.io",
-      "url": "https://www.jobbers.io/50-free-tools-every-freelancer-needs-in-2025-the-complete-resource-guide/",
+      "headline": "Essential Freelance Business Tools: 4 Systems You Need",
+      "source": "blog.annabyang.com",
+      "url": "https://blog.annabyang.com/essential-freelance-business-tools/",
       "relevance": "From search results"
     }
   ],
-  "selected": [
-    {
-      "n": 1,
-      "headline": "The 6 best AI tools for small businesses in 2026",
-      "source": "missiveapp.com",
-      "url": "https://missiveapp.com/blog/best-ai-tools-for-small-businesses",
-      "relevance": "From search results",
-      "publishDate": "2026-03-23"
-    },
-    {
-      "n": 3,
-      "headline": "AI News: Every Major Announcement From This Week",
-      "source": "www.youtube.com",
-      "url": "https://www.youtube.com/watch?v=V4un_4uTEHs",
-      "relevance": "From search results",
-      "publishDate": "2026-03-23"
-    },
-    {
-      "n": 7,
-      "headline": "11 Freelancer Tools That Save You Time (+ Earn More)",
-      "source": "weselltalent.com",
-      "url": "https://weselltalent.com/blog/freelancer-tools/",
-      "relevance": "From search results",
-      "publishDate": "2026-03-23"
-    }
-  ],
-  "skipped": false,
-  "selectedAt": "2026-03-23T11:11:18.120Z"
+  "selected": [],
+  "skipped": false
 }
