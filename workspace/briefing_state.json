@@ -1,8 +1,8 @@
 {
   "date": "2026-03-23T11:10:01.327Z",
   "dateStr": "Monday, March 23, 2026",
-  "pending": true,
-  "status": "awaiting_selection",
+  "pending": false,
+  "status": "articles_selected",
   "items": [
     {
       "n": 1,
@@ -61,6 +61,32 @@
       "relevance": "From search results"
     }
   ],
-  "selected": [],
-  "skipped": false
+  "selected": [
+    {
+      "n": 1,
+      "headline": "The 6 best AI tools for small businesses in 2026",
+      "source": "missiveapp.com",
+      "url": "https://missiveapp.com/blog/best-ai-tools-for-small-businesses",
+      "relevance": "From search results",
+      "publishDate": "2026-03-23"
+    },
+    {
+      "n": 3,
+      "headline": "AI News: Every Major Announcement From This Week",
+      "source": "www.youtube.com",
+      "url": "https://www.youtube.com/watch?v=V4un_4uTEHs",
+      "relevance": "From search results",
+      "publishDate": "2026-03-23"
+    },
+    {
+      "n": 7,
+      "headline": "11 Freelancer Tools That Save You Time (+ Earn More)",
+      "source": "weselltalent.com",
+      "url": "https://weselltalent.com/blog/freelancer-tools/",
+      "relevance": "From search results",
+      "publishDate": "2026-03-23"
+    }
+  ],
+  "skipped": false,
+  "selectedAt": "2026-03-23T11:11:18.120Z"
 }
