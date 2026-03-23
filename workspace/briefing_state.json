@@ -1,12 +1,12 @@
 {
-  "date": "2026-03-22T18:07:22.823Z",
-  "dateStr": "Sunday, March 22, 2026",
-  "pending": false,
-  "status": "articles_selected",
+  "date": "2026-03-23T11:10:01.327Z",
+  "dateStr": "Monday, March 23, 2026",
+  "pending": true,
+  "status": "awaiting_selection",
   "items": [
     {
       "n": 1,
-      "headline": "The 6 best AI tools for small businesses in 2026 · Missive Blog",
+      "headline": "The 6 best AI tools for small businesses in 2026",
       "source": "missiveapp.com",
       "url": "https://missiveapp.com/blog/best-ai-tools-for-small-businesses",
       "relevance": "From search results"
@@ -20,73 +20,47 @@
     },
     {
       "n": 3,
-      "headline": "How small businesses can win with AI and Automation - YouTube",
+      "headline": "AI News: Every Major Announcement From This Week",
       "source": "www.youtube.com",
-      "url": "https://www.youtube.com/watch?v=ZGgaYTeAC6g",
+      "url": "https://www.youtube.com/watch?v=V4un_4uTEHs",
       "relevance": "From search results"
     },
     {
       "n": 4,
+      "headline": "Find The Newest SaaS Tools On The Market 2026 - SaaSGenius",
+      "source": "www.saasgenius.com",
+      "url": "https://www.saasgenius.com/new-tools/",
+      "relevance": "From search results"
+    },
+    {
+      "n": 5,
+      "headline": "SaaS AI Tools: 400+ generative AI tools & daily AI news | Product Hunt",
+      "source": "www.producthunt.com",
+      "url": "https://www.producthunt.com/products/saas-ai-tools",
+      "relevance": "From search results"
+    },
+    {
+      "n": 6,
       "headline": "SaaS News - Crunchbase News",
       "source": "news.crunchbase.com",
       "url": "https://news.crunchbase.com/sections/saas/",
       "relevance": "From search results"
     },
     {
-      "n": 5,
-      "headline": "AI Impact: Are Your Teams Quietly Replacing SaaS? - Newsweek",
-      "source": "www.newsweek.com",
-      "url": "https://www.newsweek.com/nw-ai/ai-impact-are-your-teams-quietly-replacing-saas-11620488",
-      "relevance": "From search results"
-    },
-    {
-      "n": 6,
-      "headline": "Software-as-a-Service (SaaS) - Computer Weekly",
-      "source": "www.computerweekly.com",
-      "url": "https://www.computerweekly.com/resources/Software-as-a-Service-SaaS",
-      "relevance": "From search results"
-    },
-    {
       "n": 7,
-      "headline": "Essential Freelance Business Tools: 4 Systems You Need",
-      "source": "blog.annabyang.com",
-      "url": "https://blog.annabyang.com/essential-freelance-business-tools/",
+      "headline": "11 Freelancer Tools That Save You Time (+ Earn More)",
+      "source": "weselltalent.com",
+      "url": "https://weselltalent.com/blog/freelancer-tools/",
       "relevance": "From search results"
     },
     {
       "n": 8,
-      "headline": "12 Best Productivity Tools for Freelancers in 2025 | NotionSender",
-      "source": "www.notionsender.com",
-      "url": "https://www.notionsender.com/blog/post/productivity-tools-for-freelancers",
+      "headline": "50+ Free Tools Every Freelancer Needs in 2025 - Jobbers",
+      "source": "www.jobbers.io",
+      "url": "https://www.jobbers.io/50-free-tools-every-freelancer-needs-in-2025-the-complete-resource-guide/",
       "relevance": "From search results"
     }
   ],
-  "selected": [
-    {
-      "n": 1,
-      "headline": "The 6 best AI tools for small businesses in 2026 · Missive Blog",
-      "source": "missiveapp.com",
-      "url": "https://missiveapp.com/blog/best-ai-tools-for-small-businesses",
-      "relevance": "From search results",
-      "publishDate": "2026-03-22"
-    },
-    {
-      "n": 3,
-      "headline": "How small businesses can win with AI and Automation - YouTube",
-      "source": "www.youtube.com",
-      "url": "https://www.youtube.com/watch?v=ZGgaYTeAC6g",
-      "relevance": "From search results",
-      "publishDate": "2026-03-22"
-    },
-    {
-      "n": 5,
-      "headline": "AI Impact: Are Your Teams Quietly Replacing SaaS? - Newsweek",
-      "source": "www.newsweek.com",
-      "url": "https://www.newsweek.com/nw-ai/ai-impact-are-your-teams-quietly-replacing-saas-11620488",
-      "relevance": "From search results",
-      "publishDate": "2026-03-22"
-    }
-  ],
-  "skipped": false,
-  "selectedAt": "2026-03-22T18:08:20.194Z"
+  "selected": [],
+  "skipped": false
 }
