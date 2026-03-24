@@ -1,92 +1,80 @@
 {
-  "date": "2026-03-23T23:01:09.858Z",
-  "dateStr": "Monday, March 23, 2026",
-  "pending": false,
-  "status": "articles_selected",
+  "date": "2026-03-24T23:33:08.390Z",
+  "dateStr": "Tuesday, March 24, 2026",
+  "pending": true,
+  "status": "awaiting_selection",
   "items": [
     {
       "n": 1,
-      "headline": "11 AI Tools for Small Businesses (Low Cost, Big Impact!) | Dialpad",
-      "source": "www.dialpad.com",
-      "url": "https://www.dialpad.com/blog/ai-tools-for-small-business/",
-      "relevance": "From search results"
+      "headline": "AI Tools Revolutionize Small Business Operations in 2026",
+      "source": "UMU",
+      "url": "https://www.umu.com/ask/t11122301573854360900",
+      "relevance": "AI-driven analytics, chatbots, and email automation are now easily integrated into SMBs."
     },
     {
       "n": 2,
-      "headline": "10 Best AI Tools for Small Businesses | Blog - Relay",
-      "source": "relayfi.com",
-      "url": "https://relayfi.com/blog/10-best-ai-tools-small-businesses/",
-      "relevance": "From search results"
+      "headline": "Global e-Invoicing Updates: February 2026 Highlights",
+      "source": "YouTube",
+      "url": "https://www.youtube.com/watch?v=Tm8XeWYMxpw",
+      "relevance": "Key regulatory changes and trends in e-invoicing and e-reporting were discussed this past month."
     },
     {
       "n": 3,
-      "headline": "12 Best AI Tools for Small Businesses in 2026 - Nextiva",
-      "source": "www.nextiva.com",
-      "url": "https://www.nextiva.com/blog/best-ai-tools-for-small-business.html",
-      "relevance": "From search results"
+      "headline": "Project Management Software Market Sees Booming Growth",
+      "source": "UC Today",
+      "url": "https://www.uctoday.com/project-management/",
+      "relevance": "The latest news on project management tools, task planning, and collaboration platforms indicates significant market expansion."
     },
     {
       "n": 4,
-      "headline": "SaaS News",
-      "source": "news.crunchbase.com",
-      "url": "https://news.crunchbase.com/sections/saas/",
-      "relevance": "From search results"
+      "headline": "AI Automation Tools for SMBs Gain Momentum in 2026",
+      "source": "aismartventures.com",
+      "url": "https://aismartventures.com/posts/best-ai-automation-tools-for-small-business-in-2026/",
+      "relevance": "Platforms like Make, n8n, and Zapier are enabling teams to automate workflows, boosting efficiency for small businesses."
     },
     {
       "n": 5,
-      "headline": "Software & SaaS Breaking News and Press Releases",
-      "source": "www.businesswire.com",
-      "url": "https://www.businesswire.com/newsroom/industry/technology/software",
-      "relevance": "From search results"
+      "headline": "Top SaaS Productivity Tools for Businesses in 2026",
+      "source": "Bitrix24",
+      "url": "https://www.bitrix24.com/articles/top-saas-tools-every-business-should-use-in-2025.php",
+      "relevance": "Cloud-based SaaS platforms are essential for collaboration, data security, and overall business operations."
     },
     {
       "n": 6,
-      "headline": "What AI SaaS tools are you actually using daily?",
-      "source": "www.reddit.com",
-      "url": "https://www.reddit.com/r/SaaS/comments/1rx2829/what_ai_saas_tools_are_you_actually_using_daily/",
-      "relevance": "From search results"
+      "headline": "Essential Freelancer Tools for Time Savings and Increased Earnings",
+      "source": "weselltalent.com",
+      "url": "https://weselltalent.com/blog/freelancer-tools/",
+      "relevance": "A curated list of top tools designed to help freelancers save time and maximize their earning potential."
     },
     {
       "n": 7,
-      "headline": "The 7 Best Tools for Freelancers in 2025 - Not-So-Modern Girl",
-      "source": "notsomoderngirl.com",
-      "url": "https://notsomoderngirl.com/2025/02/19/7-best-tools-for-freelancers/",
-      "relevance": "From search results"
+      "headline": "Asana, Monday, and ClickUp: Choosing the Right Project Management Tool in 2026",
+      "source": "trackingtime.co",
+      "url": "https://trackingtime.co/project-management-software/asana-vs-monday-vs-clickup.html",
+      "relevance": "A comparative analysis of leading project management platforms highlights their strengths for different team needs."
     },
     {
       "n": 8,
-      "headline": "Essential Freelance Business Tools: 4 Systems You Need",
-      "source": "blog.annabyang.com",
-      "url": "https://blog.annabyang.com/essential-freelance-business-tools/",
-      "relevance": "From search results"
-    }
-  ],
-  "selected": [
-    {
-      "n": 1,
-      "headline": "11 AI Tools for Small Businesses (Low Cost, Big Impact!) | Dialpad",
-      "source": "www.dialpad.com",
-      "url": "https://www.dialpad.com/blog/ai-tools-for-small-business/",
-      "relevance": "From search results",
-      "publishDate": "2026-03-23"
+      "headline": "Time Tracking Software: Free Options for Teams of All Sizes",
+      "source": "TimeCamp",
+      "url": "https://www.timecamp.com/",
+      "relevance": "Detailed time tracking data from tools like TimeCamp helps managers understand productivity and optimize workflows."
     },
     {
-      "n": 5,
-      "headline": "Software & SaaS Breaking News and Press Releases",
-      "source": "www.businesswire.com",
-      "url": "https://www.businesswire.com/newsroom/industry/technology/software",
-      "relevance": "From search results",
-      "publishDate": "2026-03-23"
+      "n": 9,
+      "headline": "SMBs Embrace AI for Future Growth and Efficiency",
+      "source": "Punchbowl News",
+      "url": "https://punchbowl.news/ai-impact/small-business/",
+      "relevance": "Small business leaders are increasingly viewing AI as a critical tool for future-proofing their ventures."
     },
     {
-      "n": 6,
-      "headline": "What AI SaaS tools are you actually using daily?",
-      "source": "www.reddit.com",
-      "url": "https://www.reddit.com/r/SaaS/comments/1rx2829/what_ai_saas_tools_are_you_actually_using_daily/",
-      "relevance": "From search results",
-      "publishDate": "2026-03-23"
+      "n": 10,
+      "headline": "Clockify vs. Harvest: A 2026 Time Tracking and Invoicing Comparison",
+      "source": "Toggl Track",
+      "url": "https://toggl.com/blog/clockify-vs-harvest",
+      "relevance": "This comparison details how Clockify is ideal for small teams tracking time and invoicing, while Harvest offers distinct features."
     }
   ],
-  "skipped": false,
-  "selectedAt": "2026-03-23T23:02:27.752Z"
+  "selected": [],
+  "skipped": false
 }
