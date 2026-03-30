@@ -11,7 +11,7 @@ products: [monday, clickup]
 affiliate_disclosure: "This guide contains affiliate links. We earn a commission when you sign up through our links at no extra cost to you."
 ---
 
-Small business owners need project management tools that balance power with simplicity. In 2026, {{< vendor-link "monday" >}} and {{< vendor-link "clickup" >}} remain top contenders, but they take very different approaches to helping teams stay organized.
+Small business owners need project management tools that balance power with simplicity. In 2026, {{< vendor-link "monday" />}} and {{< vendor-link "clickup" />}} remain top contenders, but they take very different approaches to helping teams stay organized.
 
 ## Monday.com: Visual and Intuitive
 
@@ -54,4 +54,4 @@ ClickUp gives small businesses an all-in-one workspace. Docs, chat, goals, time 
 
 ## Final Verdict
 
-For small businesses prioritizing fast onboarding and visual reporting, {{< vendor-link "monday" >}} is the better choice. For businesses that want maximum flexibility and an all-in-one workspace at a lower price, {{< vendor-link "clickup" >}} wins. Both are worth testing on free trials before committing.
+For small businesses prioritizing fast onboarding and visual reporting, {{< vendor-link "monday" />}} is the better choice. For businesses that want maximum flexibility and an all-in-one workspace at a lower price, {{< vendor-link "clickup" />}} wins. Both are worth testing on free trials before committing.
