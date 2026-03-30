@@ -1,8 +1,8 @@
 {
   "date": "2026-03-30T11:00:00.058Z",
   "dateStr": "Monday, March 30, 2026",
-  "pending": true,
-  "status": "awaiting_selection",
+  "pending": false,
+  "status": "articles_selected",
   "items": [
     {
       "n": 1,
@@ -75,6 +75,32 @@
       "relevance": "A comparison guide helps businesses select the best project management platform based on team needs and project complexity."
     }
   ],
-  "selected": [],
-  "skipped": false
+  "selected": [
+    {
+      "n": 1,
+      "headline": "SaaS Product Launches Surge This Week",
+      "source": "SaaS Tech News",
+      "url": "https://saastechnews.com/",
+      "relevance": "New AI-native SaaS products are entering the market, signaling a shift in the industry.",
+      "publishDate": "2026-03-30"
+    },
+    {
+      "n": 2,
+      "headline": "Invoicing Software Updates Aim to Improve Billing & Communication",
+      "source": "Facebook",
+      "url": "https://www.facebook.com/100057351793766/posts/exciting-newswe-are-making-a-change-to-our-invoicing-software-to-help-improve-ho/1435803878341325/",
+      "relevance": "Businesses are updating their invoicing software to enhance customer billing and communication processes.",
+      "publishDate": "2026-03-30"
+    },
+    {
+      "n": 3,
+      "headline": "SMBs Leverage AI for Cost Analysis, Customer Service, and Scheduling",
+      "source": "WSJ",
+      "url": "https://www.wsj.com/tech/ai/these-small-business-owners-are-putting-ai-to-good-use-f790d5a9?gaa_at=eafs&gaa_n=AWEtsqcICgU4FaKAnkDM9qOW20VBnTTyDuwKnSYMfqRagO8fodljEP4TJ5ik&gaa_ts=69ca5b34&gaa_sig=lk6MHY4pF_VC96Dd2v9ZoNlpBlPvzBnfEE0vzIL2RYfglkar2C5rp-NU96VApYLtSvwBqF1ffk0tDx_JIKw3wQ%3D%3D",
+      "relevance": "Small businesses are actively integrating AI tools to streamline operations and improve efficiency across various functions.",
+      "publishDate": "2026-03-30"
+    }
+  ],
+  "skipped": false,
+  "selectedAt": "2026-03-30T11:01:17.922Z"
 }
