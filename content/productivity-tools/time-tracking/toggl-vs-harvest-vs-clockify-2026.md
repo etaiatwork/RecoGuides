@@ -13,7 +13,7 @@ affiliate_disclosure: "This guide contains affiliate links. We earn a commission
 
 Accurate time tracking is essential for freelancers who bill hourly. The difference between tracking every minute and rough estimates can add up to thousands of dollars per year. Here is how the three leading tools compare in 2026.
 
-## {{< vendor-link "toggl" >}}: Best for Simplicity
+## {{< vendor-link "toggl" />}}: Best for Simplicity
 
 Toggl Track is the gold standard for straightforward time tracking. One-click timers, clean reports, and excellent integrations make it the go-to choice for freelancers who want tracking that gets out of the way.
 
@@ -27,7 +27,7 @@ Toggl Track is the gold standard for straightforward time tracking. One-click ti
 
 {{< affiliate-cta "toggl" >}}
 
-## {{< vendor-link "harvest" >}}: Best for Invoicing Integration
+## {{< vendor-link "harvest" />}}: Best for Invoicing Integration
 
 Harvest combines time tracking with invoicing in one seamless workflow. You can turn tracked time into a professional invoice in under a minute. It also handles expense tracking and project budget alerts.
 
@@ -41,7 +41,7 @@ Harvest combines time tracking with invoicing in one seamless workflow. You can 
 
 {{< affiliate-cta "harvest" >}}
 
-## {{< vendor-link "clockify" >}}: Best Free Option
+## {{< vendor-link "clockify" />}}: Best Free Option
 
 Clockify offers an astonishingly generous free plan with unlimited users, unlimited projects, and solid reporting. It is a legitimate professional tool that costs nothing for most freelancers.
 
@@ -57,4 +57,4 @@ Clockify offers an astonishingly generous free plan with unlimited users, unlimi
 
 ## Final Verdict
 
-Choose {{< vendor-link "toggl" >}} Track if simplicity and reporting quality are your priorities. Choose {{< vendor-link "harvest" >}} if you want seamless invoicing built in. Choose {{< vendor-link "clockify" >}} if you need a free solution that does not compromise on core features.
+Choose {{< vendor-link "toggl" />}} Track if simplicity and reporting quality are your priorities. Choose {{< vendor-link "harvest" />}} if you want seamless invoicing built in. Choose {{< vendor-link "clockify" />}} if you need a free solution that does not compromise on core features.
