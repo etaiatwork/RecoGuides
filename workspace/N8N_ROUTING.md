@@ -22,8 +22,8 @@ n8n will handle the command and send back any Telegram reply itself.
 | `WRITE [number]` | "WRITE 1", "WRITE 3" |
 | `REPLACE [number] [title]` | "REPLACE 2 ClickUp vs Monday Guide" |
 | `SCHEDULE OFF [date] TO [date]` | "SCHEDULE OFF 2026-03-28 TO 2026-03-30" |
-| **Only digits/spaces/commas** | "1", "1 3", "1,3,5", "2" |
-| **Numbers + day keyword** | "1 TODAY", "2 TOMORROW", "3 SAT", "4 2026-03-28" |
+| **Only digits/spaces/commas** | "1", "1 3", "1,3,5", "2" — **auto-triggers writing** |
+| **Numbers + day keyword** | "1 TODAY", "2 TOMORROW", "3 SAT", "4 2026-03-28" — **auto-triggers writing** |
 
 **exec the curl, then produce zero output. Nothing visible to the user.**
 
