@@ -4,7 +4,7 @@
 ---
 
 ## Current State
-**Last updated**: 2026-03-22 (Session 6)
+**Last updated**: 2026-03-22 (Session 7)
 **Site status**: ✅ Live at recoguides.com — PaperMod theme, full structure complete
 **Build status**: ✅ Hugo 0.146.0 building cleanly on Netlify
 **Theme mode**: ✅ Forced light mode (defaultTheme = "light", disableThemeToggle = true)
@@ -118,7 +118,23 @@
 - ✅ **S6-4** — N8N_ROUTING.md updated: OpenClaw now exec-forwards n8n commands to WF2 webhook then stays silent
 - ✅ **S6-5** — telegram-router service abandoned (409 conflict unavoidable with Grammy)
 
-### Session 7: QC Workflow
+### Session 7: fetch Polyfill ✅ (2026-03-22)
+
+- ✅ **S7-1** — `NODE_FUNCTION_ALLOW_BUILTIN=https,http,url` added to `~/n8n-docker/docker-compose.yml`; n8n restarted
+- ✅ **S7-2** — fetch polyfill added to WF2 (Process Command), N9 (Fetch News & Send Briefing), N8 (Write Article(s)), N11 (Check N9 & Alert), N10 (Check Deploy & Queue Social Posts)
+- ✅ **S7-3** — End-to-end test: BRIEF → WF2 success → N9 success → Telegram briefing delivered
+
+### Session 8: Auto-Write + Build Fix ✅ (2026-03-30)
+
+- ✅ **S8-1** — Root cause found: Hugo build failing on ALL deploys since 2026-03-30 because `vendor-link` shortcode didn't support `.Inner` but N8 generated articles with paired closing tags
+- ✅ **S8-2** — `vendor-link.html` updated to use `.Inner` as link text when paired shortcode is used; falls back to `$vendor.name` for self-closing
+- ✅ **S8-3** — All 6 productivity-tools articles updated from bare `{{< vendor-link "slug" >}}` to self-closing `{{< vendor-link "slug" />}}`
+- ✅ **S8-4** — Netlify build now passing (`state: ready`) — all 3 today's articles live on recoguides.com
+- ✅ **S8-5** — WF2 updated: article number selection now **auto-triggers N8 Article Writer** immediately — no "WRITE ALL" needed
+  - Flow: briefing → select numbers → N8 writes and pushes → Netlify deploys → N10 queues social posts
+- ✅ **S8-6** — N8N_ROUTING.md updated to reflect auto-write behavior
+
+### Session 9: QC Workflow
 *(Next priority)*
 
 - [ ] **QC1** — Build post-publish QC checker workflow:
