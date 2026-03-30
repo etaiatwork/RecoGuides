@@ -11,7 +11,7 @@ products: [clickup, asana]
 affiliate_disclosure: "This guide contains affiliate links."
 ---
 
-Project management tools are the backbone of productive teams. {{< vendor-link "clickup" >}} and {{< vendor-link "asana" >}} remain two of the top contenders in 2026, but they cater to different audiences.
+Project management tools are the backbone of productive teams. {{< vendor-link "clickup" />}} and {{< vendor-link "asana" />}} remain two of the top contenders in 2026, but they cater to different audiences.
 
 ## ClickUp: The Feature Juggernaut
 
@@ -39,4 +39,4 @@ Asana delivers a clean interface that gets teams onboarded fast. Portfolio views
 
 ## Final Verdict
 
-Pick {{< vendor-link "clickup" >}} for deep customization. Pick {{< vendor-link "asana" >}} for simplicity and client-facing work. Both offer free plans worth testing before committing.
+Pick {{< vendor-link "clickup" />}} for deep customization. Pick {{< vendor-link "asana" />}} for simplicity and client-facing work. Both offer free plans worth testing before committing.
