@@ -6,9 +6,11 @@
   {{ end }}
 {{ end }}
 {{ if $vendor }}
+  {{ $displayText := $vendor.name }}
+  {{ if .Inner }}{{ $displayText = .Inner }}{{ end }}
   {{ if eq $vendor.status "active" }}
-    <a href="{{ $vendor.affiliateUrl }}" rel="nofollow sponsored">{{ $vendor.name }}</a>
+    <a href="{{ $vendor.affiliateUrl }}" rel="nofollow sponsored">{{ $displayText | safeHTML }}</a>
   {{ else }}
-    <a href="{{ $vendor.websiteUrl }}" rel="nofollow">{{ $vendor.name }}</a>
+    <a href="{{ $vendor.websiteUrl }}" rel="nofollow">{{ $displayText | safeHTML }}</a>
   {{ end }}
-{{ else }}{{ $slug }}{{ end }}
+{{ else }}{{ if .Inner }}{{ .Inner | safeHTML }}{{ else }}{{ $slug }}{{ end }}{{ end }}
