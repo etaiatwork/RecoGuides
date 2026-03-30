@@ -133,6 +133,13 @@
 - ✅ **S8-5** — WF2 updated: article number selection now **auto-triggers N8 Article Writer** immediately — no "WRITE ALL" needed
   - Flow: briefing → select numbers → N8 writes and pushes → Netlify deploys → N10 queues social posts
 - ✅ **S8-6** — N8N_ROUTING.md updated to reflect auto-write behavior
+- ✅ **S8-7** — N9 updated: each briefing item tagged with `type: 'breaking'` or `type: 'evergreen'` before saving to briefing_state.json
+- ✅ **S8-8** — N8 updated: briefing items now routed by type:
+  - `breaking` → `content/breaking-news/`, tags: breaking-news/news/smb/ai, 800-1000 words
+  - `evergreen` + subcategory keyword match → `content/productivity-tools/{subcategory}/`, tags: subcategory/guide/review/smb, 1500-1800 words
+  - `evergreen` + no subcategory match → `content/breaking-news/` (fallback), tags: ai-tools/guide/smb
+  - Subcategory detection: project-management, time-tracking, invoicing via keyword regex on headline+relevance
+  - GitHub commit messages also updated to reflect content type
 
 ### Session 9: QC Workflow
 *(Next priority)*
