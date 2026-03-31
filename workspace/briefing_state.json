@@ -1,8 +1,8 @@
 {
   "date": "2026-03-31T11:00:00.067Z",
   "dateStr": "Tuesday, March 31, 2026",
-  "pending": true,
-  "status": "awaiting_selection",
+  "pending": false,
+  "status": "articles_selected",
   "items": [
     {
       "n": 1,
@@ -85,6 +85,44 @@
       "type": "evergreen"
     }
   ],
-  "selected": [],
-  "skipped": false
+  "selected": [
+    {
+      "n": 1,
+      "headline": "AI Automation is Shifting from Experimental to Operational for SMBs",
+      "source": "Autonomous.ai",
+      "url": "https://www.autonomous.ai/ourblog/ai-automation-for-small-businesses",
+      "relevance": "AI automation tools are now accessible and operational for small businesses, moving beyond experimental phases.",
+      "type": "breaking",
+      "publishDate": "2026-03-31"
+    },
+    {
+      "n": 4,
+      "headline": "Top AI Tools for Small Businesses Offer Low Cost, Big Impact",
+      "source": "Dialpad",
+      "url": "https://www.dialpad.com/blog/ai-tools-for-small-business/",
+      "relevance": "Discover AI-powered customer intelligence platforms and other tools designed to provide significant benefits for SMBs.",
+      "type": "evergreen",
+      "publishDate": "2026-03-31"
+    },
+    {
+      "n": 6,
+      "headline": "AI Automation is Helping Small Businesses Scale in 2026",
+      "source": "AIJorn",
+      "url": "https://aijourn.com/how-ai-automation-is-helping-small-businesses-scale-in-2026/",
+      "relevance": "Explore how custom AI automation built around specific workflows and data can significantly aid small business growth.",
+      "type": "evergreen",
+      "publishDate": "2026-03-31"
+    },
+    {
+      "n": 7,
+      "headline": "AI Impact: Teams Quietly Replacing SaaS Functionality",
+      "source": "Newsweek",
+      "url": "https://www.newsweek.com/nw-ai/ai-impact-are-your-teams-quietly-replacing-saas-11620488",
+      "relevance": "A survey indicates a significant percentage of teams are replacing traditional SaaS tool functionality with AI solutions.",
+      "type": "evergreen",
+      "publishDate": "2026-03-31"
+    }
+  ],
+  "skipped": false,
+  "selectedAt": "2026-03-31T11:16:21.606Z"
 }
