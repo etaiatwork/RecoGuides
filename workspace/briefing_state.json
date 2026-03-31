@@ -1,106 +1,90 @@
 {
-  "date": "2026-03-30T11:00:00.058Z",
-  "dateStr": "Monday, March 30, 2026",
-  "pending": false,
-  "status": "articles_selected",
+  "date": "2026-03-31T11:00:00.067Z",
+  "dateStr": "Tuesday, March 31, 2026",
+  "pending": true,
+  "status": "awaiting_selection",
   "items": [
     {
       "n": 1,
-      "headline": "SaaS Product Launches Surge This Week",
-      "source": "SaaS Tech News",
-      "url": "https://saastechnews.com/",
-      "relevance": "New AI-native SaaS products are entering the market, signaling a shift in the industry."
+      "headline": "AI Automation is Shifting from Experimental to Operational for SMBs",
+      "source": "Autonomous.ai",
+      "url": "https://www.autonomous.ai/ourblog/ai-automation-for-small-businesses",
+      "relevance": "AI automation tools are now accessible and operational for small businesses, moving beyond experimental phases.",
+      "type": "breaking"
     },
     {
       "n": 2,
-      "headline": "Invoicing Software Updates Aim to Improve Billing & Communication",
-      "source": "Facebook",
-      "url": "https://www.facebook.com/100057351793766/posts/exciting-newswe-are-making-a-change-to-our-invoicing-software-to-help-improve-ho/1435803878341325/",
-      "relevance": "Businesses are updating their invoicing software to enhance customer billing and communication processes."
+      "headline": "ProjectManager Announces Flexible Custom Workflow Automation",
+      "source": "ProjectManager",
+      "url": "https://www.projectmanager.com/news",
+      "relevance": "ProjectManager has introduced its most flexible custom workflow automation and approvals for hybrid work management.",
+      "type": "breaking"
     },
     {
       "n": 3,
-      "headline": "SMBs Leverage AI for Cost Analysis, Customer Service, and Scheduling",
-      "source": "WSJ",
-      "url": "https://www.wsj.com/tech/ai/these-small-business-owners-are-putting-ai-to-good-use-f790d5a9?gaa_at=eafs&gaa_n=AWEtsqcICgU4FaKAnkDM9qOW20VBnTTyDuwKnSYMfqRagO8fodljEP4TJ5ik&gaa_ts=69ca5b34&gaa_sig=lk6MHY4pF_VC96Dd2v9ZoNlpBlPvzBnfEE0vzIL2RYfglkar2C5rp-NU96VApYLtSvwBqF1ffk0tDx_JIKw3wQ%3D%3D",
-      "relevance": "Small businesses are actively integrating AI tools to streamline operations and improve efficiency across various functions."
+      "headline": "Global e-Invoicing & e-Reporting Updates Released February 2026",
+      "source": "YouTube",
+      "url": "https://www.youtube.com/watch?v=Tm8XeWYMxpw",
+      "relevance": "A look at the latest global updates in e-invoicing and e-reporting for February 2026.",
+      "type": "breaking"
     },
     {
       "n": 4,
-      "headline": "Top AI Tools for Small Businesses in 2026 Revealed",
-      "source": "folk CRM",
-      "url": "https://www.folk.app/articles/best-ai-tools-for-small-business",
-      "relevance": "A curated list highlights essential AI tools like CRMs, writing assistants, and automation platforms for SMBs."
+      "headline": "Top AI Tools for Small Businesses Offer Low Cost, Big Impact",
+      "source": "Dialpad",
+      "url": "https://www.dialpad.com/blog/ai-tools-for-small-business/",
+      "relevance": "Discover AI-powered customer intelligence platforms and other tools designed to provide significant benefits for SMBs.",
+      "type": "evergreen"
     },
     {
       "n": 5,
-      "headline": "AI Automation Tools are Key for Small Business Growth in 2026",
-      "source": "myaifrontdesk.com",
-      "url": "https://www.myaifrontdesk.com/blogs/unlock-growth-top-ai-tools-for-small-business-automation-in-2026",
-      "relevance": "AI automation is presented as a critical strategy for small businesses looking to unlock growth and efficiency."
+      "headline": "13 Best AI Tools for Small Business in 2026",
+      "source": "folk CRM",
+      "url": "https://folk.app/articles/best-ai-tools-for-small-business",
+      "relevance": "A curated list of essential AI tools for small businesses in 2026, including CRM, writing assistants, and automation platforms.",
+      "type": "evergreen"
     },
     {
       "n": 6,
-      "headline": "Freelancers Need Essential Business Tools for Scaling",
-      "source": "anna by yang",
-      "url": "https://blog.annabyang.com/essential-freelance-business-tools/",
-      "relevance": "Freelancers are advised to adopt key systems beyond basic tech to manage and grow their businesses effectively."
+      "headline": "AI Automation is Helping Small Businesses Scale in 2026",
+      "source": "AIJorn",
+      "url": "https://aijourn.com/how-ai-automation-is-helping-small-businesses-scale-in-2026/",
+      "relevance": "Explore how custom AI automation built around specific workflows and data can significantly aid small business growth.",
+      "type": "evergreen"
     },
     {
       "n": 7,
-      "headline": "Project Management Software: 2026's Top Picks for Teams",
-      "source": "PCMag",
-      "url": "https://www.pcmag.com/picks/the-best-project-management-software",
-      "relevance": "This review highlights leading project management software, emphasizing ease of use and features beneficial for small teams."
+      "headline": "AI Impact: Teams Quietly Replacing SaaS Functionality",
+      "source": "Newsweek",
+      "url": "https://www.newsweek.com/nw-ai/ai-impact-are-your-teams-quietly-replacing-saas-11620488",
+      "relevance": "A survey indicates a significant percentage of teams are replacing traditional SaaS tool functionality with AI solutions.",
+      "type": "evergreen"
     },
     {
       "n": 8,
-      "headline": "Billing and Invoicing Software Market Sees Significant Momentum",
-      "source": "openPR.com",
-      "url": "https://www.openpr.com/news/4417539/billing-and-invoicing-software-market-growth-trends",
-      "relevance": "The adoption of digital tools is driving substantial growth in the billing and invoicing software market."
+      "headline": "Essential Freelance Business Tools: 4 Systems You Need",
+      "source": "Anna Byang",
+      "url": "https://blog.annabyang.com/essential-freelance-business-tools/",
+      "relevance": "A guide to the core systems and tools that freelancers need to manage their businesses effectively.",
+      "type": "evergreen"
     },
     {
       "n": 9,
-      "headline": "Time Tracking Software Essential for Productivity and Billing",
-      "source": "thedigitalprojectmanager.com",
-      "url": "https://thedigitalprojectmanager.com/tools/time-tracking-software/",
-      "relevance": "Expert reviews showcase time tracking tools that help with deadlines, billing, and team time management."
+      "headline": "Invoice Software in 2026: Smarter, More Automated, and Paperless",
+      "source": "Artsyltech",
+      "url": "https://www.artsyltech.com/invoicing-software",
+      "relevance": "An overview of the evolving landscape of invoicing software, highlighting its increased automation and paperless capabilities for 2026.",
+      "type": "evergreen"
     },
     {
       "n": 10,
-      "headline": "Asana, Monday, and ClickUp: Choosing the Right Project Management Tool",
-      "source": "trackingtime.co",
-      "url": "https://trackingtime.co/project-management-software/asana-vs-monday-vs-clickup.html",
-      "relevance": "A comparison guide helps businesses select the best project management platform based on team needs and project complexity."
+      "headline": "Trello vs Asana vs Monday vs ClickUp: Ultimate Guide (2026)",
+      "source": "Software Finder",
+      "url": "https://softwarefinder.com/resources/trello-vs-asana-vs-monday-vs-clickup",
+      "relevance": "A comprehensive comparison of leading project management tools, detailing their strengths and ideal use cases for 2026.",
+      "type": "evergreen"
     }
   ],
-  "selected": [
-    {
-      "n": 1,
-      "headline": "SaaS Product Launches Surge This Week",
-      "source": "SaaS Tech News",
-      "url": "https://saastechnews.com/",
-      "relevance": "New AI-native SaaS products are entering the market, signaling a shift in the industry.",
-      "publishDate": "2026-03-30"
-    },
-    {
-      "n": 2,
-      "headline": "Invoicing Software Updates Aim to Improve Billing & Communication",
-      "source": "Facebook",
-      "url": "https://www.facebook.com/100057351793766/posts/exciting-newswe-are-making-a-change-to-our-invoicing-software-to-help-improve-ho/1435803878341325/",
-      "relevance": "Businesses are updating their invoicing software to enhance customer billing and communication processes.",
-      "publishDate": "2026-03-30"
-    },
-    {
-      "n": 3,
-      "headline": "SMBs Leverage AI for Cost Analysis, Customer Service, and Scheduling",
-      "source": "WSJ",
-      "url": "https://www.wsj.com/tech/ai/these-small-business-owners-are-putting-ai-to-good-use-f790d5a9?gaa_at=eafs&gaa_n=AWEtsqcICgU4FaKAnkDM9qOW20VBnTTyDuwKnSYMfqRagO8fodljEP4TJ5ik&gaa_ts=69ca5b34&gaa_sig=lk6MHY4pF_VC96Dd2v9ZoNlpBlPvzBnfEE0vzIL2RYfglkar2C5rp-NU96VApYLtSvwBqF1ffk0tDx_JIKw3wQ%3D%3D",
-      "relevance": "Small businesses are actively integrating AI tools to streamline operations and improve efficiency across various functions.",
-      "publishDate": "2026-03-30"
-    }
-  ],
-  "skipped": false,
-  "selectedAt": "2026-03-30T11:01:17.922Z"
+  "selected": [],
+  "skipped": false
 }
