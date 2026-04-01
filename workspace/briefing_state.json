@@ -1,8 +1,8 @@
 {
   "date": "2026-04-01T11:00:00.123Z",
   "dateStr": "Wednesday, April 1, 2026",
-  "pending": true,
-  "status": "awaiting_selection",
+  "pending": false,
+  "status": "articles_selected",
   "items": [
     {
       "n": 1,
@@ -85,6 +85,44 @@
       "type": "evergreen"
     }
   ],
-  "selected": [],
-  "skipped": false
+  "selected": [
+    {
+      "n": 2,
+      "headline": "Wall Street Bets AI Will Disrupt SaaS Market",
+      "source": "Fortune",
+      "url": "https://fortune.com/2026/03/25/ai-wall-street-software-as-a-service-productivity/",
+      "relevance": "Financial analysts believe AI will fundamentally change the Software as a Service landscape, with companies potentially replacing existing tools with AI-driven solutions.",
+      "type": "breaking",
+      "publishDate": "2026-04-01"
+    },
+    {
+      "n": 3,
+      "headline": "Top AI Tools for Small Businesses in 2026",
+      "source": "folk CRM",
+      "url": "https://www.folk.app/articles/best-ai-tools-for-small-business",
+      "relevance": "This article lists essential AI tools like folk CRM, Grammarly, Notion AI, and Microsoft Copilot that can benefit SMBs in 2026.",
+      "type": "evergreen",
+      "publishDate": "2026-04-01"
+    },
+    {
+      "n": 4,
+      "headline": "AI Automation Offers Quick Wins for Small Businesses in 2026",
+      "source": "aiforsmallbusiness.io",
+      "url": "https://aiforsmallbusiness.io/ai-automation-for-small-businesses-2026/",
+      "relevance": "Explores seven practical applications of AI automation for small businesses, focusing on areas like customer service to drive efficiency.",
+      "type": "evergreen",
+      "publishDate": "2026-04-01"
+    },
+    {
+      "n": 5,
+      "headline": "Congress Examines AI's Impact on Small Businesses",
+      "source": "Punchbowl News",
+      "url": "https://punchbowl.news/ai-impact/small-business/",
+      "relevance": "Legislators are considering both the opportunities and challenges AI presents for small business growth and innovation.",
+      "type": "evergreen",
+      "publishDate": "2026-04-01"
+    }
+  ],
+  "skipped": false,
+  "selectedAt": "2026-04-01T11:48:30.930Z"
 }
