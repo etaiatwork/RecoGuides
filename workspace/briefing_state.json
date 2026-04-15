@@ -1,128 +1,82 @@
 {
-  "date": "2026-04-01T11:00:00.123Z",
-  "dateStr": "Wednesday, April 1, 2026",
-  "pending": false,
-  "status": "articles_selected",
+  "date": "2026-04-15T11:00:00.059Z",
+  "dateStr": "Wednesday, April 15, 2026",
+  "pending": true,
+  "status": "awaiting_selection",
   "items": [
     {
       "n": 1,
-      "headline": "AI Productivity Tools Burn $840M Annually, Often Abandoned",
-      "source": "Reddit",
-      "url": "https://www.reddit.com/r/SaaS/comments/1r4fdzw/companies_burned_840myear_on_ai_productivity/",
-      "relevance": "A discussion highlights significant annual spending on AI productivity tools that are frequently abandoned shortly after implementation.",
+      "headline": "InvoiceScanner.co Launches AI Invoice Processing Software",
+      "source": "OpenPR",
+      "url": "https://www.openpr.com/news/4449707/invoicescanner-co-launches-new-software-for-ai-invoice",
+      "relevance": "New AI tool for SMBs to automate invoice data capture.",
       "type": "breaking"
     },
     {
       "n": 2,
-      "headline": "Wall Street Bets AI Will Disrupt SaaS Market",
-      "source": "Fortune",
-      "url": "https://fortune.com/2026/03/25/ai-wall-street-software-as-a-service-productivity/",
-      "relevance": "Financial analysts believe AI will fundamentally change the Software as a Service landscape, with companies potentially replacing existing tools with AI-driven solutions.",
+      "headline": "AI Tools for Business: Top Picks for SMBs in 2026",
+      "source": "Cybernews",
+      "url": "https://cybernews.com/ai-tools/best-ai-tools-for-business/",
+      "relevance": "Highlights Sintra as a budget-friendly AI virtual assistant option for small businesses.",
       "type": "breaking"
     },
     {
       "n": 3,
-      "headline": "Top AI Tools for Small Businesses in 2026",
-      "source": "folk CRM",
-      "url": "https://www.folk.app/articles/best-ai-tools-for-small-business",
-      "relevance": "This article lists essential AI tools like folk CRM, Grammarly, Notion AI, and Microsoft Copilot that can benefit SMBs in 2026.",
+      "headline": "AI Automation for Small Businesses: A Practical 2026 Guide",
+      "source": "SIQstack Blog",
+      "url": "https://www.siqstack.com/blog/ai-automation-small-business-2026",
+      "relevance": "Explores how AI can drive growth and efficiency for SMBs in the coming year.",
       "type": "evergreen"
     },
     {
       "n": 4,
-      "headline": "AI Automation Offers Quick Wins for Small Businesses in 2026",
-      "source": "aiforsmallbusiness.io",
-      "url": "https://aiforsmallbusiness.io/ai-automation-for-small-businesses-2026/",
-      "relevance": "Explores seven practical applications of AI automation for small businesses, focusing on areas like customer service to drive efficiency.",
+      "headline": "Congress Eyes AI Benefits and Risks for Small Businesses",
+      "source": "Punchbowl News",
+      "url": "https://punchbowl.news/ai-impact/small-business/",
+      "relevance": "Indicates ongoing governmental consideration of AI's impact on the SMB sector.",
       "type": "evergreen"
     },
     {
       "n": 5,
-      "headline": "Congress Examines AI's Impact on Small Businesses",
-      "source": "Punchbowl News",
-      "url": "https://punchbowl.news/ai-impact/small-business/",
-      "relevance": "Legislators are considering both the opportunities and challenges AI presents for small business growth and innovation.",
+      "headline": "Project Management Software Trends for 2026",
+      "source": "GoodDay",
+      "url": "https://www.goodday.work/blog/project-management-software-trends/",
+      "relevance": "Focuses on practical, adaptive, and insight-driven PM tools to reduce manual effort.",
       "type": "evergreen"
     },
     {
       "n": 6,
-      "headline": "Freelancers Leverage AI and Productivity Tools for Growth",
-      "source": "Sprintful",
-      "url": "https://sprintful.com/blog/tools-for-freelancers-and-consultants",
-      "relevance": "Essential tools for freelancers are highlighted, covering project management, time optimization, client communication, and financial handling.",
+      "headline": "Best Freelancer Tools for Scaling Businesses in 2026",
+      "source": "Better Proposals",
+      "url": "https://betterproposals.io/blog/best-tools-for-freelancers/",
+      "relevance": "Highlights essential tools for freelancers aiming to grow their businesses, with pricing starting around $29/month.",
       "type": "evergreen"
     },
     {
       "n": 7,
-      "headline": "Project Management Software Updates and Trends",
-      "source": "UC Today",
-      "url": "https://www.uctoday.com/project-management/",
-      "relevance": "This section provides ongoing news and updates on project management tools, task planning, and collaboration platforms.",
+      "headline": "Time Tracking Tools for Teams in 2026: Top 10",
+      "source": "Timeneye",
+      "url": "https://www.timeneye.com/blog/best-time-tracking-for-teams",
+      "relevance": "Reviews top time tracking solutions to help teams manage schedules and hit deadlines.",
       "type": "evergreen"
     },
     {
       "n": 8,
-      "headline": "Invoicing Software Sees Updates for Improved Efficiency",
-      "source": "Bill4Time",
-      "url": "https://www.bill4time.com/blog/invoicing-software-updates/",
-      "relevance": "Recent updates to invoicing software are being released to enhance functionality and streamline billing processes for businesses.",
+      "headline": "Asana vs. Monday vs. ClickUp: Choosing the Right PM Tool in 2026",
+      "source": "TrackingTime",
+      "url": "https://trackingtime.co/project-management-software/asana-vs-monday-vs-clickup.html",
+      "relevance": "Compares popular project management platforms based on team needs and customization.",
       "type": "evergreen"
     },
     {
       "n": 9,
-      "headline": "Time Tracking Software Essential for Modern Teams in 2026",
-      "source": "Celoxis",
-      "url": "https://fr.celoxis.com/article/best-time-tracking-software",
-      "relevance": "Time tracking software is identified as a critical tool for businesses in 2026 to accurately record work hours and improve operational visibility.",
-      "type": "evergreen"
-    },
-    {
-      "n": 10,
-      "headline": "Asana, ClickUp, and Monday.com: Feature Comparisons for 2026",
-      "source": "Productive.io",
-      "url": "https://productive.io/blog/asana-vs-clickup-vs-monday-vs-productive/",
-      "relevance": "A comparative analysis of popular project management tools, detailing their unique strengths and features for businesses in 2026.",
+      "headline": "Clockify vs. Harvest: A 2026 Comparison for Time Tracking & Invoicing",
+      "source": "Toggl",
+      "url": "https://toggl.com/blog/clockify-vs-harvest",
+      "relevance": "Analyzes two key time tracking and invoicing tools, highlighting Clockify's suitability for small teams.",
       "type": "evergreen"
     }
   ],
-  "selected": [
-    {
-      "n": 2,
-      "headline": "Wall Street Bets AI Will Disrupt SaaS Market",
-      "source": "Fortune",
-      "url": "https://fortune.com/2026/03/25/ai-wall-street-software-as-a-service-productivity/",
-      "relevance": "Financial analysts believe AI will fundamentally change the Software as a Service landscape, with companies potentially replacing existing tools with AI-driven solutions.",
-      "type": "breaking",
-      "publishDate": "2026-04-01"
-    },
-    {
-      "n": 3,
-      "headline": "Top AI Tools for Small Businesses in 2026",
-      "source": "folk CRM",
-      "url": "https://www.folk.app/articles/best-ai-tools-for-small-business",
-      "relevance": "This article lists essential AI tools like folk CRM, Grammarly, Notion AI, and Microsoft Copilot that can benefit SMBs in 2026.",
-      "type": "evergreen",
-      "publishDate": "2026-04-01"
-    },
-    {
-      "n": 4,
-      "headline": "AI Automation Offers Quick Wins for Small Businesses in 2026",
-      "source": "aiforsmallbusiness.io",
-      "url": "https://aiforsmallbusiness.io/ai-automation-for-small-businesses-2026/",
-      "relevance": "Explores seven practical applications of AI automation for small businesses, focusing on areas like customer service to drive efficiency.",
-      "type": "evergreen",
-      "publishDate": "2026-04-01"
-    },
-    {
-      "n": 5,
-      "headline": "Congress Examines AI's Impact on Small Businesses",
-      "source": "Punchbowl News",
-      "url": "https://punchbowl.news/ai-impact/small-business/",
-      "relevance": "Legislators are considering both the opportunities and challenges AI presents for small business growth and innovation.",
-      "type": "evergreen",
-      "publishDate": "2026-04-01"
-    }
-  ],
-  "skipped": false,
-  "selectedAt": "2026-04-01T11:48:30.930Z"
+  "selected": [],
+  "skipped": false
 }
