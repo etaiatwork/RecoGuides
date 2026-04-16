@@ -1,6 +1,6 @@
 {
-  "date": "2026-04-15T11:00:00.059Z",
-  "dateStr": "Wednesday, April 15, 2026",
+  "date": "2026-04-16T23:46:31.044Z",
+  "dateStr": "Thursday, April 16, 2026",
   "pending": true,
   "status": "awaiting_selection",
   "items": [
@@ -9,71 +9,79 @@
       "headline": "InvoiceScanner.co Launches AI Invoice Processing Software",
       "source": "OpenPR",
       "url": "https://www.openpr.com/news/4449707/invoicescanner-co-launches-new-software-for-ai-invoice",
-      "relevance": "New AI tool for SMBs to automate invoice data capture.",
+      "relevance": "New AI-powered invoicing software aims to streamline financial operations for businesses.",
       "type": "breaking"
     },
     {
       "n": 2,
-      "headline": "AI Tools for Business: Top Picks for SMBs in 2026",
-      "source": "Cybernews",
-      "url": "https://cybernews.com/ai-tools/best-ai-tools-for-business/",
-      "relevance": "Highlights Sintra as a budget-friendly AI virtual assistant option for small businesses.",
+      "headline": "ProjectManager Launches New Template Library for Marketing Teams",
+      "source": "tmcnet.com",
+      "url": "https://www.projectmanager.com/news",
+      "relevance": "Project management software provider introduces new features to support hybrid marketing teams.",
       "type": "breaking"
     },
     {
       "n": 3,
-      "headline": "AI Automation for Small Businesses: A Practical 2026 Guide",
-      "source": "SIQstack Blog",
-      "url": "https://www.siqstack.com/blog/ai-automation-small-business-2026",
-      "relevance": "Explores how AI can drive growth and efficiency for SMBs in the coming year.",
+      "headline": "AI Tools for Small Businesses: Top Picks for 2026",
+      "source": "Cybernews",
+      "url": "https://cybernews.com/ai-tools/best-ai-tools-for-business/",
+      "relevance": "Highlights budget-friendly AI solutions like Sintra, offering virtual assistants for SMBs.",
       "type": "evergreen"
     },
     {
       "n": 4,
-      "headline": "Congress Eyes AI Benefits and Risks for Small Businesses",
-      "source": "Punchbowl News",
-      "url": "https://punchbowl.news/ai-impact/small-business/",
-      "relevance": "Indicates ongoing governmental consideration of AI's impact on the SMB sector.",
+      "headline": "AI Automation for Small Businesses: A Practical 2026 Guide",
+      "source": "SIQstack Blog",
+      "url": "https://www.siqstack.com/blog/ai-automation-small-business-2026",
+      "relevance": "Explores how AI automation is becoming essential for SMB efficiency and growth.",
       "type": "evergreen"
     },
     {
       "n": 5,
-      "headline": "Project Management Software Trends for 2026",
-      "source": "GoodDay",
-      "url": "https://www.goodday.work/blog/project-management-software-trends/",
-      "relevance": "Focuses on practical, adaptive, and insight-driven PM tools to reduce manual effort.",
+      "headline": "SaaS Productivity Tools: Balancing Benefits and Potential Drawbacks",
+      "source": "Facebook",
+      "url": "https://www.facebook.com/groups/433353283438845/posts/26050743191273169/",
+      "relevance": "Discusses how tools like Zapier can save time, while also noting potential productivity challenges.",
       "type": "evergreen"
     },
     {
       "n": 6,
-      "headline": "Best Freelancer Tools for Scaling Businesses in 2026",
-      "source": "Better Proposals",
-      "url": "https://betterproposals.io/blog/best-tools-for-freelancers/",
-      "relevance": "Highlights essential tools for freelancers aiming to grow their businesses, with pricing starting around $29/month.",
+      "headline": "Project Management Software Market Poised for Significant Growth",
+      "source": "pm-global.co.uk",
+      "url": "https://news.pm-global.co.uk/2026/02/project-management-software-is-booming-but-pms-must-lead-the-adoption/",
+      "relevance": "The PM software market is projected to more than double by 2030, indicating strong demand.",
       "type": "evergreen"
     },
     {
       "n": 7,
-      "headline": "Time Tracking Tools for Teams in 2026: Top 10",
-      "source": "Timeneye",
-      "url": "https://www.timeneye.com/blog/best-time-tracking-for-teams",
-      "relevance": "Reviews top time tracking solutions to help teams manage schedules and hit deadlines.",
+      "headline": "Best Time Tracking Software for Teams in 2026",
+      "source": "monday.com",
+      "url": "https://monday.com/blog/project-management/time-tracking-software/",
+      "relevance": "Reviews top time tracking platforms that link logged hours to project profitability and resource capacity.",
       "type": "evergreen"
     },
     {
       "n": 8,
-      "headline": "Asana vs. Monday vs. ClickUp: Choosing the Right PM Tool in 2026",
-      "source": "TrackingTime",
-      "url": "https://trackingtime.co/project-management-software/asana-vs-monday-vs-clickup.html",
-      "relevance": "Compares popular project management platforms based on team needs and customization.",
+      "headline": "Asana, ClickUp, Monday: AI Integration in Project Management",
+      "source": "reworked.org",
+      "url": "https://www.reworked.org/collaboration-productivity/generative-ai-comes-for-project-management-an-overview-of-4-solutions/",
+      "relevance": "Examines how leading project management tools are incorporating Generative AI for enhanced functionality.",
       "type": "evergreen"
     },
     {
       "n": 9,
-      "headline": "Clockify vs. Harvest: A 2026 Comparison for Time Tracking & Invoicing",
-      "source": "Toggl",
-      "url": "https://toggl.com/blog/clockify-vs-harvest",
-      "relevance": "Analyzes two key time tracking and invoicing tools, highlighting Clockify's suitability for small teams.",
+      "headline": "Freelancer Business Tools: Essential Systems for Organization",
+      "source": "annabyang.com",
+      "url": "https://blog.annabyang.com/essential-freelance-business-tools/",
+      "relevance": "Identifies key software systems crucial for freelancers to manage their business effectively.",
+      "type": "evergreen"
+    },
+    {
+      "n": 10,
+      "headline": "Global e-Invoicing & e-Reporting Updates: February 2026",
+      "source": "YouTube",
+      "url": "https://www.youtube.com/watch?v=Tm8XeWYMxpw",
+      "relevance": "Highlights ongoing regulatory changes in e-invoicing and digital tax compliance across various countries.",
       "type": "evergreen"
     }
   ],
