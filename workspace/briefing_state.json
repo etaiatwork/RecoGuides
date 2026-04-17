@@ -1,6 +1,6 @@
 {
-  "date": "2026-04-16T23:46:31.044Z",
-  "dateStr": "Thursday, April 16, 2026",
+  "date": "2026-04-17T11:00:00.056Z",
+  "dateStr": "Friday, April 17, 2026",
   "pending": true,
   "status": "awaiting_selection",
   "items": [
@@ -14,74 +14,74 @@
     },
     {
       "n": 2,
-      "headline": "ProjectManager Launches New Template Library for Marketing Teams",
-      "source": "tmcnet.com",
-      "url": "https://www.projectmanager.com/news",
-      "relevance": "Project management software provider introduces new features to support hybrid marketing teams.",
+      "headline": "ProjectTemplate Library Launched for Hybrid Marketing Teams",
+      "source": "TMCnet",
+      "url": "https://www.tmcnet.com/news/2022/01/04/9515099.htm",
+      "relevance": "ProjectManager.com introduces a new template library to support hybrid marketing teams.",
       "type": "breaking"
     },
     {
       "n": 3,
-      "headline": "AI Tools for Small Businesses: Top Picks for 2026",
-      "source": "Cybernews",
-      "url": "https://cybernews.com/ai-tools/best-ai-tools-for-business/",
-      "relevance": "Highlights budget-friendly AI solutions like Sintra, offering virtual assistants for SMBs.",
+      "headline": "AI Revolutionizing Small Business Tax Payments, Cutting Penalties",
+      "source": "ASBN",
+      "url": "https://www.asbn.com/small-business-shows/business-trends/ai-revolutionizing-small-business-tax-payments-cutting-costly-penalties/",
+      "relevance": "AI tools are enhancing visibility and verification in tax payments, helping SMBs avoid costly penalties.",
       "type": "evergreen"
     },
     {
       "n": 4,
       "headline": "AI Automation for Small Businesses: A Practical 2026 Guide",
-      "source": "SIQstack Blog",
+      "source": "Siqstack",
       "url": "https://www.siqstack.com/blog/ai-automation-small-business-2026",
-      "relevance": "Explores how AI automation is becoming essential for SMB efficiency and growth.",
+      "relevance": "This guide explores the practical applications and benefits of AI automation for small businesses in 2026.",
       "type": "evergreen"
     },
     {
       "n": 5,
-      "headline": "SaaS Productivity Tools: Balancing Benefits and Potential Drawbacks",
-      "source": "Facebook",
-      "url": "https://www.facebook.com/groups/433353283438845/posts/26050743191273169/",
-      "relevance": "Discusses how tools like Zapier can save time, while also noting potential productivity challenges.",
+      "headline": "Best AI Tools for Small Businesses in 2026",
+      "source": "Gladly",
+      "url": "https://www.gladly.ai/blog/best-ai-tools-for-small-businesses/",
+      "relevance": "A comprehensive look at top AI tools, including ChatGPT, for various SMB needs like drafting emails and brainstorming.",
       "type": "evergreen"
     },
     {
       "n": 6,
-      "headline": "Project Management Software Market Poised for Significant Growth",
-      "source": "pm-global.co.uk",
-      "url": "https://news.pm-global.co.uk/2026/02/project-management-software-is-booming-but-pms-must-lead-the-adoption/",
-      "relevance": "The PM software market is projected to more than double by 2030, indicating strong demand.",
+      "headline": "Project Management Software Trends in 2026",
+      "source": "GoodDay.work",
+      "url": "https://www.goodday.work/blog/project-management-software-trends/",
+      "relevance": "Project management software is becoming more adaptive and insight-driven, focusing on reducing manual effort.",
       "type": "evergreen"
     },
     {
       "n": 7,
-      "headline": "Best Time Tracking Software for Teams in 2026",
-      "source": "monday.com",
-      "url": "https://monday.com/blog/project-management/time-tracking-software/",
-      "relevance": "Reviews top time tracking platforms that link logged hours to project profitability and resource capacity.",
+      "headline": "Invoice Software in 2026: Smarter, More Automated, Paperless",
+      "source": "Artsyltech",
+      "url": "https://www.artsyltech.com/invoicing-software",
+      "relevance": "Invoice software is evolving with increased automation and a move towards paperless operations, with a checklist for 2026 readiness.",
       "type": "evergreen"
     },
     {
       "n": 8,
-      "headline": "Asana, ClickUp, Monday: AI Integration in Project Management",
-      "source": "reworked.org",
-      "url": "https://www.reworked.org/collaboration-productivity/generative-ai-comes-for-project-management-an-overview-of-4-solutions/",
-      "relevance": "Examines how leading project management tools are incorporating Generative AI for enhanced functionality.",
+      "headline": "Time Tracking Software: Top 15 Tools for Managers in 2026",
+      "source": "monday.com",
+      "url": "https://monday.com/blog/project-management/time-tracking-software/",
+      "relevance": "This list highlights 15 time tracking software options that connect logged hours to project health and profitability.",
       "type": "evergreen"
     },
     {
       "n": 9,
-      "headline": "Freelancer Business Tools: Essential Systems for Organization",
-      "source": "annabyang.com",
-      "url": "https://blog.annabyang.com/essential-freelance-business-tools/",
-      "relevance": "Identifies key software systems crucial for freelancers to manage their business effectively.",
+      "headline": "Asana, ClickUp, Monday: How GenAI is Transforming Project Management",
+      "source": "Reworked",
+      "url": "https://www.reworked.com/collaboration-productivity/generative-ai-comes-for-project-management-an-overview-of-4-solutions/",
+      "relevance": "Generative AI features are being integrated into popular project management tools for various applications.",
       "type": "evergreen"
     },
     {
       "n": 10,
-      "headline": "Global e-Invoicing & e-Reporting Updates: February 2026",
-      "source": "YouTube",
-      "url": "https://www.youtube.com/watch?v=Tm8XeWYMxpw",
-      "relevance": "Highlights ongoing regulatory changes in e-invoicing and digital tax compliance across various countries.",
+      "headline": "Best Freelance Business Tools: Essential Systems for Organization",
+      "source": "Anna Byang",
+      "url": "https://blog.annabyang.com/essential-freelance-business-tools/",
+      "relevance": "Essential freelance business tools are crucial for freelancers to stay organized and manage their operations effectively.",
       "type": "evergreen"
     }
   ],
